@@ -1,0 +1,89 @@
+Estructura Completa de la Landing Page de SalvaNovaSolutions
+1. Header (Encabezado) y Propuesta de Valor
+Elemento	Contenido Integrado (Copy Principal)
+Logo	SalvaNovaSolutions
+Headline (Título Principal)	Cómo Transformar tu PyME Administrativa en un Negocio Eficiente y Escalable con IA
+Sub-Headline	El paso a paso que permite a empresas ahorrar hasta un 70% del tiempo en tareas administrativas como facturación, reportes y conciliación de datos, reduciendo costos y errores de forma predecible y constante.
+Ataque a Miedos (Beneficios Clave)	Hemos ayudado a negocios a automatizar procesos clave con inteligencia artificial y software a medida, logrando que sus equipos trabajen más rápido y dediquen más tiempo a lo que realmente importa: crecer.
+👉 Sin sistemas complejos o integraciones dolorosas.
+👉 Sin cambiar toda tu infraestructura de golpe.
+👉 Sin gastar miles en consultores tradicionales sin resultados garantizados.
+Elemento Visual	Video Sales Letter (VSL) o una imagen de impacto que represente eficiencia y automatización.
+CTA Flotante/Principal	Botón: "Descubre el 70% de Ahorro: Agenda tu Consultoría Express GRATIS"
+
+Exportar a Hojas de cálculo
+2. La Oferta de Alto Valor: Consultoría Express
+Elemento	Contenido Integrado (La Oferta Irresistible)
+Título de la Sección	La Solución Rápida y sin Compromiso: Consultoría Express en Automatización Administrativa con IA
+Promesa Central	En solo 48 horas te mostramos el camino exacto para que tu empresa pueda:
+Beneficios Rápidos	✅ Automatizar facturación y reportes en segundos.
+✅ Reducir errores manuales en conciliaciones.
+✅ Ahorrar decenas de horas de trabajo operativo.
+✅ Escalar tu capacidad sin contratar más personal.
+Entregables (Lo que Incluye)	1. Reunión de Diagnóstico (30 min).
+2. Informe con 3 Procesos que podés automatizar ya mismo.
+3. Demo Práctica de automatización aplicada a tu negocio.
+4. Plan de Acción en PDF con pasos claros.
+5. Propuesta opcional de desarrollo a medida (con ROI).
+CTA de Cierre de Oferta	Botón: "Empieza a Ahorrar Hoy: Solicita tu Consultoría Express GRATUITA"
+
+Exportar a Hojas de cálculo
+3. Prueba Social y Casos de Éxito
+Título: "Empresas Administrativas que Ya Lograron Reducir Costos y Escalar su Back-Office."
+
+Contenido: (Aquí debes incluir tus casos de éxito con este formato):
+
+Caso 1 (Ejemplo): [Sector de la Empresa]. Ahorro de $15.000 USD al año en su proceso de conciliación.
+
+Caso 2 (Ejemplo): [Otro Sector]. Reducción del 65% en el tiempo de cierre de mes gracias al software de reportes a medida.
+
+Elemento Visual: Videos cortos o citas textuales de dueños/gerentes.
+
+4. Sobre Mí: Tu Socio Estratégico en Tecnología (Salvatore Berticci)
+Título: Sobre Mí: Tu Socio Estratégico en Tecnología.
+
+Presentación: Mi nombre es Salvatore Berticci y soy el fundador de SalvaNovaSolutions.
+
+Trayectoria: He dedicado más de cinco años al desarrollo de software, con un profundo enfoque en la Inteligencia Artificial aplicada a la eficiencia de negocios. He trabajado con varias empresas tanto en desarrollo web como en automatización y, de manera independiente, he trabajado como freelance automatizando procesos administrativos.
+
+Diferenciador: Resaltar el enfoque en ROI (Retorno de Inversión) y en las Soluciones a Medida.
+
+5. Autoridad y Resultados (Prueba)
+Título: "+$XX Millones en Ahorro Operacional Identificado y Generado para Nuestros Clientes."
+
+Contenido: Gráficos que muestren el antes y después de un flujo de trabajo administrativo (ej. de 10 pasos a 2). Cifras de la reducción de errores humanos lograda en el historial de proyectos.
+
+6. Lo que Incluye (El Proceso de Implementación)
+Título: "El Proceso de 3 Pasos para la Automatización Perfecta."
+
+Módulos Detallados (Si avanzan después de la Consultoría Express):
+
+Diagnóstico y Blueprint: Análisis profundo, diseño del flujo de trabajo y arquitectura del software.
+
+Desarrollo y Pruebas (MVP): Construcción del software a medida e integración.
+
+Implementación y Adopción: Puesta en marcha, capacitación del equipo y soporte post-lanzamiento.
+
+CTA de Cierre de Sección: Botón: "¿Listo para Escalar? Agenda tu Consultoría Express GRATUITA"
+
+7. Call To Action (CTA) Final y Formulario de Agendamiento
+Título de CTA Final: "Tu Ahorro Comienza con una Llamada de 30 Minutos. Agenda tu Consultoría Express Hoy."
+
+Formulario: Incrustación del widget de agendamiento (Calendly o similar).
+
+Notas Importantes: Instruir al cliente a detallar su principal cuello de botella en las notas del formulario para garantizar una reunión de alto valor.
+
+8. Preguntas Frecuentes (FAQ)
+Título: Preguntas Frecuentes.
+
+Preguntas Clave (Enfocadas en la Oferta):
+
+¿Esta consultoría de 30 minutos es realmente gratuita?
+
+¿Mi PyME es demasiado pequeña para automatizar con IA?
+
+¿Tengo que comprarles el software después de la consultoría?
+
+¿Cuánto tiempo toma la implementación de un software a medida?
+
+¿Qué pasa si mis empleados no se adaptan a la nueva tecnología?

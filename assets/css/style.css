@@ -1,0 +1,737 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #001f54; /* Azul tecnológico oscuro */
+    --secondary-color: #f0f4f8; /* Gris azulado claro */
+    --accent-color: #00c6ff; /* Azul eléctrico */
+    --text-color: #333;
+    --light-text-color: #fff;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.8;
+    letter-spacing: 0.03em; /* Ajuste para un toque más tecnológico */
+    color: var(--light-text-color); /* Texto claro para todo el cuerpo */
+    background-color: var(--primary-color); /* Fondo oscuro para las partículas */
+    position: relative;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2; /* Detrás del contenido y del body::before si se mantiene */
+    background-color: var(--primary-color); /* Asegura el color de fondo */
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Entre las partículas y el contenido */
+    background-image:
+        linear-gradient(0deg, rgba(0, 198, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 198, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px; /* Tamaño de la cuadrícula */
+    animation: grid-pulse 10s infinite linear;
+    mix-blend-mode: overlay; /* Para un efecto de mezcla con las partículas */
+    pointer-events: none;
+}
+
+@keyframes grid-pulse {
+    0% { background-position: 0 0; opacity: 0.1; }
+    50% { background-position: 50px 50px; opacity: 0.2; }
+    100% { background-position: 100px 100px; opacity: 0.1; }
+}
+
+/* Wave styles removed */
+
+/* El contenido principal debe tener un z-index mayor para ser visible */
+#header, #hero-intro, #clientes, #sobre-mi, #servicios, #resultados, #beneficios, #cta-final, #faq, #footer {
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 40px 0; /* Ajuste del padding vertical para reducir el margen entre secciones */
+}
+
+/* Alternating Section Colors */
+section:nth-of-type(even) {
+    background-color: transparent; /* Fondo transparente para ver las partículas/rejilla */
+    color: var(--light-text-color);
+}
+
+section:nth-of-type(even) h2,
+section:nth-of-type(even),
+section:nth-of-type(even) p,
+section:nth-of-type(even) li {
+    color: var(--light-text-color);
+}
+
+h1, h2, h3 {
+    font-family: 'Space Mono', monospace; /* Usar Space Mono para títulos */
+    font-weight: 700;
+    color: var(--accent-color); /* Color de acento para títulos */
+    text-shadow: 0 0 8px rgba(0, 198, 255, 0.7), 0 0 15px rgba(0, 198, 255, 0.4); /* Efecto neón */
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    opacity: 1; /* Ensure titles are visible by default */
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: var(--light-text-color);
+    text-shadow: 0 0 3px rgba(0, 198, 255, 0.2);
+}
+
+/* Header */
+#header {
+
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 40px 0;
+}
+
+.logo img {
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+#header h1 {
+    color: var(--light-text-color);
+    max-width: 900px;
+    margin: 0 auto;
+    text-shadow: 0 0 10px rgba(0, 198, 255, 0.5); /* Efecto de brillo sutil */
+}
+
+/* Hero Intro */
+#hero-intro {
+    padding-top: 20px;
+    text-align: center;
+}
+
+#hero-intro .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+    padding: 20px; /* Padding generoso */
+}
+#hero-intro .subheadline {
+    max-width: 800px;
+    text-align: center;
+}
+.visual {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for YouTube videos */
+    border-radius: 15px; /* Bordes ligeramente redondeados */
+    overflow: hidden; /* Asegura que el video respete el border-radius */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra para efecto premium */
+    backdrop-filter: blur(10px); /* Glassmorphism */
+    background-color: rgba(0, 31, 84, 0.1); /* Fondo semitransparente */
+}
+
+.visual iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.subheadline {
+    font-size: 1.5em;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    color: var(--light-text-color); /* Texto claro para subheadline */
+    font-weight: 700;
+    text-shadow: 0 0 5px rgba(0, 198, 255, 0.3); /* Efecto de brillo sutil */
+}
+
+.benefits ul {
+    list-style: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: inline-block;
+    text-align: left;
+}
+
+.benefits li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.visual img {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    border-radius: var(--border-radius);
+}
+
+.cta-button {
+    margin-top: 50px;
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--light-text-color);
+    padding: 18px 35px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out; /* Transición más suave */
+    box-shadow: 0 4px 15px rgba(0, 198, 255, 0.4);
+}
+
+/* Additional margin for CTA buttons after card sections */
+#servicios .cta-button,
+#beneficios .cta-button {
+    margin-top: 80px;
+}
+
+.cta-button:hover {
+    background-color: #00a0cc;
+    transform: translateY(-5px) scale(1.05); /* Más pronunciado */
+    box-shadow: 0 0 25px rgba(0, 198, 255, 0.8), 0 0 50px rgba(0, 198, 255, 0.5); /* Brillo más intenso */
+}
+
+/* Sections */
+.benefits-list {
+    list-style: none;
+    margin: 30px 0;
+    font-size: 1.1em;
+}
+
+.benefits-list li {
+    margin-bottom: 15px;
+}
+
+ol {
+    margin: 30px 0 30px 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+    opacity: 0.9;
+}
+
+/* Clientes Section */
+.testimonial-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: rgba(255, 255, 255, 0.05); /* Fondo semitransparente */
+    color: var(--light-text-color); /* Texto claro para tarjetas */
+    padding: 40px;
+    border-radius: 20px; /* Bordes más redondeados */
+    margin-bottom: 40px;
+    box-shadow: 0 0 25px rgba(0, 198, 255, 0.15), 0 0 50px rgba(0, 198, 255, 0.1); /* Efecto de brillo */
+    border: 1px solid rgba(0, 198, 255, 0.2); /* Borde sutil */
+    text-align: left;
+    transition: all 0.3s ease; /* Para animaciones de hover */
+    backdrop-filter: blur(10px); /* Glassmorphism */
+}
+
+#clientes .testimonial-card h3,
+#clientes .testimonial-card p {
+    color: var(--light-text-color); /* Asegurar texto claro dentro de la tarjeta */
+}
+
+#clientes .testimonial-card h3 {
+    color: var(--accent-color); /* Título con color de acento */
+}
+
+.testimonial-video {
+    flex: 0 0 40%;
+}
+
+.testimonial-video video {
+    width: 100%;
+    border-radius: var(--border-radius);
+    display: block;
+}
+
+.testimonial-info {
+    flex: 1 1 auto;
+}
+
+/* Prueba Social */
+.cases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.case {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s;
+}
+
+.case:hover {
+    transform: translateY(-5px);
+}
+
+/* Sobre Mí */
+#sobre-mi {
+    background-color: transparent; /* Fondo transparente */
+}
+
+.about-me-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-me-info {
+    flex: 1 1 60%;
+}
+
+.about-me-info h2 {
+    /* text-align: left; */
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.about-me-info h3 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.about-me-info .handle {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-me-image {
+    flex: 1 1 40%;
+}
+
+.about-me-image img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 25px rgba(0, 198, 255, 0.15), 0 0 50px rgba(0, 198, 255, 0.1); /* Efecto de brillo */
+    border: 1px solid rgba(0, 198, 255, 0.2); /* Borde sutil */
+}
+
+/* Servicios Section */
+#servicios {
+    text-align: center;
+    background-color: transparent; /* Fondo transparente para que se vean las partículas */
+}
+
+#servicios h2, #servicios h3, #servicios p {
+    color: var(--light-text-color); /* Texto claro para esta sección */
+}
+
+#servicios h2 .highlight {
+    color: var(--accent-color);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.service-card {
+    background-color: rgba(0, 31, 84, 0.5); /* Fondo semitransparente del color primario */
+    padding: 40px 30px;
+    border-radius: 20px; /* Bordes más redondeados */
+    text-align: center;
+    transition: all 0.3s ease; /* Para animaciones de hover */
+    box-shadow: 0 0 25px rgba(0, 198, 255, 0.15), 0 0 50px rgba(0, 198, 255, 0.1); /* Efecto de brillo */
+    border: 1px solid rgba(0, 198, 255, 0.2); /* Borde sutil */
+    position: relative; /* Para pseudo-elemento */
+    overflow: hidden; /* Para el efecto de brillo */
+    backdrop-filter: blur(10px); /* Glassmorphism */
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid var(--accent-color); /* Borde de acento */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+.service-card:hover::before {
+    opacity: 0.4;
+}
+
+/* Efecto de brillo al pasar el ratón */
+.service-card::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 198, 255, 0.3) 0%, transparent 70%);
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+}
+
+.service-card:hover::after {
+    opacity: 1;
+    transform: rotate(45deg) translate(20%, 20%);
+}
+
+.service-card:hover {
+    transform: translateY(-8px) scale(1.02); /* Más pronunciado */
+    box-shadow: 0 0 35px rgba(0, 198, 255, 0.3), 0 0 70px rgba(0, 198, 255, 0.2);
+}
+
+.service-icon {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: var(--accent-color); /* Usar azul eléctrico */
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: var(--accent-color); /* Título con color de acento */
+}
+
+.service-card p {
+    color: var(--light-text-color); /* Texto claro */
+}
+
+/* Resultados Section */
+#resultados {
+    background-color: transparent; /* Fondo transparente */
+}
+
+#resultados h2,
+#resultados p {
+    color: var(--light-text-color);
+}
+
+.results-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.results-text {
+    flex: 1 1 55%;
+    text-align: left;
+}
+
+.results-text h2 {
+    /* text-align: left; */
+    font-size: 2.8em;
+    line-height: 1.4;
+    margin-bottom: 50px;
+}
+
+.results-text p {
+    line-height: 2.0;
+    margin-bottom: 25px;
+}
+
+.results-cta {
+    display: block;
+    margin: 40px auto 0;
+    text-align: center;
+    width: fit-content;
+}
+
+.results-graph {
+    flex: 1 1 45%;
+}
+
+.graph-placeholder {
+    background-color: rgba(0, 31, 84, 0.5); /* Dark blue for graph background */
+    padding: 30px;
+    border-radius: 20px; /* Bordes más redondeados */
+    color: var(--light-text-color);
+    box-shadow: 0 0 25px rgba(0, 198, 255, 0.15), 0 0 50px rgba(0, 198, 255, 0.1); /* Efecto de brillo */
+    border: 1px solid rgba(0, 198, 255, 0.2); /* Borde sutil */
+    backdrop-filter: blur(10px); /* Glassmorphism */
+}
+
+.graph-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.graph-amount {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.graph-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.graph-caption {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 15px;
+    opacity: 0.8;
+}
+
+/* Beneficios Section */
+#beneficios {
+    text-align: center;
+    background-color: transparent; /* Fondo transparente */
+}
+
+#beneficios h2,
+#beneficios p {
+    color: var(--light-text-color); /* Texto claro */
+}
+
+#beneficios h2 .highlight {
+    color: var(--accent-color);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.benefit-card {
+    background-color: rgba(0, 31, 84, 0.5); /* Fondo semitransparente del color primario */
+    padding: 40px 30px;
+    border-radius: 20px; /* Bordes más redondeados */
+    text-align: center;
+    transition: all 0.3s ease; /* Para animaciones de hover */
+    box-shadow: 0 0 25px rgba(0, 198, 255, 0.15), 0 0 50px rgba(0, 198, 255, 0.1); /* Efecto de brillo */
+    border: 1px solid rgba(0, 198, 255, 0.2); /* Borde sutil */
+    backdrop-filter: blur(10px); /* Glassmorphism */
+}
+
+.benefit-card:hover {
+    transform: translateY(-8px) scale(1.02); /* Más pronunciado */
+    box-shadow: 0 0 35px rgba(0, 198, 255, 0.3), 0 0 70px rgba(0, 198, 255, 0.2);
+}
+
+.benefit-card h3 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: var(--accent-color); /* Título con color de acento */
+}
+
+.benefit-card p {
+    color: var(--light-text-color); /* Texto claro */
+}
+
+.module {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.module:hover {
+    transform: translateY(-5px);
+}
+
+/* FAQ Section */
+#faq {
+    background-color: transparent; /* Fondo transparente */
+}
+
+#faq h2,
+#faq h3,
+#faq p {
+    color: var(--light-text-color); /* Texto claro */
+}
+
+/* CTA Final */
+#cta-final {
+    text-align: center;
+    background-color: transparent; /* Fondo transparente */
+}
+
+#cta-final h2 {
+    color: var(--light-text-color);
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: rgba(0, 31, 84, 0.5); /* Fondo semitransparente del color primario */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 198, 255, 0.15), 0 0 50px rgba(0, 198, 255, 0.1);
+    border: 1px solid rgba(0, 198, 255, 0.2);
+    backdrop-filter: blur(10px); /* Glassmorphism */
+}
+
+#contact-form label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    color: var(--light-text-color);
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 8px;
+    border: 1px solid var(--accent-color); /* Borde de acento */
+    border-radius: var(--border-radius);
+    background-color: rgba(0, 198, 255, 0.1); /* Fondo semitransparente */
+    color: var(--light-text-color);
+    font-family: 'Lato', sans-serif;
+}
+
+#contact-form button {
+    width: 100%;
+    background-color: var(--accent-color);
+    color: var(--light-text-color);
+    padding: 18px 35px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out; /* Transición más suave */
+    box-shadow: 0 4px 15px rgba(0, 198, 255, 0.4);
+}
+
+#contact-form button:hover {
+    background-color: #00a0cc;
+    transform: translateY(-5px) scale(1.05); /* Más pronunciado */
+    box-shadow: 0 0 25px rgba(0, 198, 255, 0.8), 0 0 50px rgba(0, 198, 255, 0.5); /* Brillo más intenso */
+}
+
+/* FAQ */
+.faq-item {
+    margin-bottom: 20px;
+    background-color: rgba(0, 31, 84, 0.5); /* Fondo semitransparente del color primario */
+    padding: 25px;
+    border-radius: 20px; /* Bordes más redondeados */
+    box-shadow: 0 0 25px rgba(0, 198, 255, 0.15), 0 0 50px rgba(0, 198, 255, 0.1); /* Efecto de brillo */
+    border: 1px solid rgba(0, 198, 255, 0.2); /* Borde sutil */
+    transition: all 0.3s ease; /* Para animaciones de hover */
+    backdrop-filter: blur(10px); /* Glassmorphism */
+}
+
+.faq-item h3 {
+    margin-bottom: 10px;
+    color: var(--accent-color); /* Título con color de acento */
+}
+
+/* Footer */
+#footer {
+    color: var(--light-text-color);
+    padding: 40px 0;
+    margin-top: 80px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 767px) {
+    #header h1 {
+        font-size: 2.5em; /* Ajuste para móviles */
+        line-height: 1.1; /* Interlineado más ajustado */
+    }
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: var(--light-text-color);
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
