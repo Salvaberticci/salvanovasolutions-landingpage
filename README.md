@@ -70,14 +70,5 @@ El proyecto sigue una estructura de archivos clara y organizada:
 *   `anexo-proteccion-datos.html`, `descargo-de-responsabilidad.html`, `politica-de-privacidad.html`, `proteccion-de-datos.html`, `terminos-y-condiciones.html`: Páginas adicionales para información legal y de privacidad.
 *   `info.txt`: Archivo de texto con información adicional (posiblemente de configuración o notas).
 
-## Contacto
-
-Para cualquier consulta o información adicional, puedes contactar a:
-
-**Salvatore Berticci**
-*   GitHub: [Salvaberticci](https://github.com/Salvaberticci)
-*   Email: [tu-email@example.com](mailto:tu-email@example.com) (Reemplazar con el email real)
-
----
 
 © 2025 SalvaNova Solutions. Todos los derechos reservados.
