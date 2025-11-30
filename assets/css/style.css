@@ -25,17 +25,14 @@ body {
     z-index: 1;
 }
 
-body::before {
-    content: '';
+#particles-js {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #001f54, #004080, #001f54);
-    background-size: 400% 400%;
-    animation: gradientShift 10s ease infinite;
-    z-index: -2;
+    top: 0;
+    left: 0;
+    z-index: -2; /* Behind content */
+    background-color: transparent;
 }
 
 body::after {
@@ -45,7 +42,7 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Entre las partículas y el contenido */
+    z-index: -2; /* Behind nodes */
     background-image:
         linear-gradient(0deg, rgba(0, 198, 255, 0.03) 1px, transparent 1px),
         linear-gradient(90deg, rgba(0, 198, 255, 0.03) 1px, transparent 1px);
@@ -600,12 +597,20 @@ ol li {
     transform: translateY(-5px);
 }
 
+/* Servicios Section */
+#servicios h2 {
+    margin-bottom: 60px;
+}
+
 /* FAQ Section */
 #faq {
     background-color: transparent; /* Fondo transparente */
 }
 
-#faq h2,
+#faq h2 {
+    margin-bottom: 60px;
+}
+
 #faq h3,
 #faq p {
     color: var(--light-text-color); /* Texto claro */
@@ -743,4 +748,17 @@ ol li {
 
 .footer-links a:hover {
     color: var(--accent-color);
+}
+
+
+/* Scroll Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
