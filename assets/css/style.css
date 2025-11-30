@@ -25,14 +25,17 @@ body {
     z-index: 1;
 }
 
-#particles-js {
+body::before {
+    content: '';
     position: fixed;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
-    z-index: -2; /* Detrás del contenido y del body::before si se mantiene */
-    background-color: var(--primary-color); /* Asegura el color de fondo */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #001f54, #004080, #001f54);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    z-index: -2;
 }
 
 body::after {
@@ -56,6 +59,12 @@ body::after {
     0% { background-position: 0 0; opacity: 0.1; }
     50% { background-position: 50px 50px; opacity: 0.2; }
     100% { background-position: 100px 100px; opacity: 0.1; }
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 /* Wave styles removed */

@@ -13,20 +13,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js"></script>
     <link rel="icon" type="image/png" href="assets/images/logos/favicon.png">
 </head>
 
 <body>
-    <div id="particles-js"></div>
-
     <!-- Header -->
     <header id="header" class="text-center">
         <div class="container max-w-4xl mx-auto px-5 md:px-8 lg:px-10">
             <div class="logo">
                 <img src="assets/images/logos/logo.png" alt="SalvaNovaSolutions Logo"
-                    class="max-w-[200px] mx-auto mb-2">
+                    class="max-w-[200px] mx-auto mb-2" loading="lazy">
             </div>
             <h1 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-relaxed">Pasá de 6 Horas a 10 Minutos de Gestión
                 Administrativa con Nova System.
@@ -44,10 +41,7 @@
             <div
                 class="visual relative w-full pb-[56.25%] rounded-xl overflow-hidden shadow-2xl backdrop-blur-lg bg-blue-900/10 mb-8 md:mb-6 lg:mb-4">
                 <!-- Placeholder for VSL -->
-                <iframe src="https://www.youtube.com/embed/x90lsx92yik?autoplay=1&controls=0&modestbranding=1&rel=0&fs=0&disablekb=1&iv_load_policy=3&start=1"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <lite-youtube videoid="x90lsx92yik" params="controls=0&modestbranding=1&rel=0&fs=0&disablekb=1&iv_load_policy=3&start=1"></lite-youtube>
             </div>
 
 <a href="#cta-final" class="cta-button mt-8 md:mt-6 lg:mt-4 mb-4 md:mb-3 lg:mb-2">Agenda tu <em>Auditoría Express GRATUITA</em> y
@@ -59,12 +53,12 @@
     <!-- Clientes -->
     <section id="clientes" class="section">
         <div class="container">
-            <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight">Hemos trabajado con empresas de telecomunicaciones y servicios que pasaron de procesos manuales en papel y Excel a operaciones 100% automatizadas</h2>
-            <p class="section-subtitle mt-8">Estas son algunas de las compañías que ya transformaron su gestión interna con Nova System.</p>
+            <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight">Hemos ayudado a una empresa de telecomunicaciones y servicios que pasó de procesos manuales en papel y Excel a operaciones 100% automatizadas</h2>
+            <p class="section-subtitle mt-8">Esta es la compañía que ya transformó su gestión interna con Nova System.</p>
 
             <div class="testimonial-card flex flex-col md:flex-row gap-5 md:gap-10 p-6 md:p-8 text-center md:text-left">
                 <div class="testimonial-video w-full md:w-2/5">
-                    <iframe src="https://www.youtube.com/embed/l2n60F68ikg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width:100%; aspect-ratio:16/9;"></iframe>
+                    <lite-youtube videoid="l2n60F68ikg"></lite-youtube>
                 </div>
                 <div class="testimonial-info w-full md:w-3/5">
                     <h3 class="text-xl md:text-2xl lg:text-3xl text-center md:text-left">Galanet Escuque | 95% Reducción Operativa</h3>
@@ -74,43 +68,7 @@
                 </div>
             </div>
 
-            <div class="testimonial-card flex flex-col md:flex-row gap-5 md:gap-10 p-6 md:p-8 text-center md:text-left">
-                <div class="testimonial-video w-full md:w-2/5">
-                    <video width="100%" controls poster="https://via.placeholder.com/800x450.png?text=Cliente+2">
-                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="testimonial-info w-full md:w-3/5">
-                    <h3 class="text-xl md:text-2xl lg:text-3xl text-center md:text-left">Manufactura Precisa SRL +70% Eficiencia</h3>
-                    <p><strong>Conoce a Manufactura Precisa:</strong> Su principal cuello de botella era la generación
-                        de reportes de producción, un proceso que tardaba días y estaba lleno de inconsistencias. Esto
-                        retrasaba la toma de decisiones estratégicas.</p>
-                    <p>Implementamos un software a medida que genera reportes en tiempo real. En el primer trimestre, su
-                        eficiencia en la planificación de la producción aumentó en un 70%, duplicando su capacidad de
-                        respuesta a nuevos pedidos.</p>
-                    <p>Hoy, tienen una visibilidad completa de su operación, permitiéndoles escalar de manera predecible
-                        y constante.</p>
-                </div>
-            </div>
 
-            <div class="testimonial-card flex flex-col md:flex-row gap-5 md:gap-10 p-6 md:p-8 text-center md:text-left">
-                <div class="testimonial-video w-full md:w-2/5">
-                    <video width="100%" controls poster="https://via.placeholder.com/800x450.png?text=Cliente+3">
-                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="testimonial-info w-full md:w-3/5">
-                    <h3 class="text-xl md:text-2xl lg:text-3xl text-center md:text-left">Servicios Globales Co. +40 horas/semana ahorradas</h3>
-                    <p><strong>Conoce a Servicios Globales:</strong> Dedicaban más de 40 horas a la semana solo a la
-                        facturación y seguimiento de cobros. El crecimiento de la empresa estaba estancado por la carga
-                        administrativa.</p>
-                    <p>Automatizamos completamente su ciclo de facturación, desde la emisión hasta el recordatorio de
-                        pago. El resultado fue un ahorro inmediato de 40 horas semanales y una reducción del 30% en la
-                        morosidad.</p>
-                    <p>Hoy, el equipo administrativo se dedica a tareas de alto valor, y la empresa ha podido expandir
-                        sus servicios sin contratar más personal.</p>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -130,7 +88,7 @@
                     muestro el ROI, implemento el sistema y te garantizo resultados medibles.</p>
             </div>
             <div class="about-me-image w-full md:w-2/5 max-w-[80%] md:max-w-full mx-auto mt-8 md:mt-0">
-                <img src="assets/images/foto-mia.webp" alt="Salvatore Berticci">
+                <img src="assets/images/foto-mia.webp" alt="Salvatore Berticci" loading="lazy">
             </div>
         </div>
     </section>
@@ -219,7 +177,7 @@
                         <span class="graph-amount text-lg md:text-xl lg:text-2xl">Reducción del 95% del Tiempo
                             Operativo</span>
                     </div>
-                    <canvas id="resultsChart" style="width: 100%; border-radius: 8px;"></canvas>
+                    <img src="assets/images/resultchart.png" alt="Resultados" style="width: 100%; border-radius: 8px;" loading="lazy">
                     <div class="graph-footer flex flex-col gap-2 md:gap-4 text-center">
                         <span>Tareas Administrativas de Inventario y Nómina</span>
                         <div>
@@ -345,8 +303,6 @@
         </div>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
         const ctx = document.getElementById('resultsChart').getContext('2d');
