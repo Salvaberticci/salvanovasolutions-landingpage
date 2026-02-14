@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /assets/css/
+Disallow: /assets/js/
+Disallow: /assets/images/logos/favicon - copia.png
 
 Sitemap: https://salvanovasolutions.online/sitemap.xml
