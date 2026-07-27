@@ -323,77 +323,38 @@ ol li {
     transform: translateY(-5px);
 }
 
-/* Portafolio de Proyectos */
-#portafolio h2 {
-    margin-bottom: 20px;
-}
-
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
-    margin-top: 40px;
-}
-
-.portfolio-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(0, 198, 255, 0.15);
-    border-radius: 16px;
-    padding: 24px;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(8px);
-    box-shadow: 0 0 15px rgba(0, 198, 255, 0.05);
-}
-
-.portfolio-card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(0, 198, 255, 0.4);
-    box-shadow: 0 0 30px rgba(0, 198, 255, 0.12);
-    background: rgba(255, 255, 255, 0.08);
-}
-
-.portfolio-card i {
-    font-size: 1.8em;
-    color: var(--accent-color);
-    margin-bottom: 12px;
-    display: block;
-}
-
-.portfolio-card h3 {
-    color: var(--accent-color);
-    font-size: 1.1em;
-    margin-bottom: 8px;
-    font-weight: 700;
-}
-
-.portfolio-card p {
-    color: var(--light-text-color);
-    font-size: 0.9em;
-    line-height: 1.5;
-    opacity: 0.85;
-}
-
-.portfolio-category {
-    margin-top: 50px;
-}
-
-.portfolio-category:first-of-type {
-    margin-top: 0;
-}
-
-.portfolio-category h3 {
-    color: var(--accent-color);
-    font-size: 1.4em;
-    margin-bottom: 20px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid rgba(0, 198, 255, 0.2);
+/* Video Placeholder */
+.video-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: rgba(0, 198, 255, 0.08);
+    border: 2px dashed rgba(0, 198, 255, 0.3);
+    border-radius: 8px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease;
 }
 
-.portfolio-category h3 i {
-    font-size: 1em;
+.video-placeholder i {
+    font-size: 2.5em;
+    color: rgba(0, 198, 255, 0.4);
+}
+
+.video-placeholder p {
+    font-size: 0.9em;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.video-placeholder small {
+    font-size: 0.75em;
+    color: rgba(255, 255, 255, 0.25);
 }
 
 /* Sobre Mí */
