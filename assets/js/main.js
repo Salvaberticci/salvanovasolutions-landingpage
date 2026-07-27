@@ -135,7 +135,7 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
 // Show More / Show Less for Portfolio
 (function() {
-    const PORTAFOLIO_SECTION = document.getElementById('portafolio');
+    const PORTAFOLIO_SECTION = document.getElementById('clientes');
     if (!PORTAFOLIO_SECTION) return;
 
     const CARDS = PORTAFOLIO_SECTION.querySelectorAll('.testimonial-card');
