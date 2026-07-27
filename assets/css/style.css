@@ -357,6 +357,26 @@ ol li {
     color: rgba(255, 255, 255, 0.25);
 }
 
+/* Show More Button */
+#ver-mas-proyectos {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+#ver-mas-proyectos .fa-chevron-down {
+    transition: transform 0.3s ease;
+}
+
+#ver-mas-proyectos.rotated .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+.proyecto-oculto {
+    display: none !important;
+}
+
 /* Sobre Mí */
 #sobre-mi {
     background-color: transparent; /* Fondo transparente */
