@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -270,6 +271,8 @@ ol li {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    width: 100%;
+    max-width: 100%;
     background-color: rgba(255, 255, 255, 0.05);
     color: var(--light-text-color);
     padding: 40px;
@@ -280,11 +283,14 @@ ol li {
     text-align: left;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
     .testimonial-card {
         flex-direction: row;
+        align-items: flex-start;
     }
 }
 
@@ -300,6 +306,15 @@ ol li {
 .testimonial-video {
     flex: 0 0 40%;
     max-width: 40%;
+    min-width: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.testimonial-video lite-youtube,
+.testimonial-video .video-placeholder {
+    width: 100%;
+    display: block;
 }
 
 .testimonial-video video {
@@ -310,6 +325,12 @@ ol li {
 
 .testimonial-info {
     flex: 1 1 auto;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+#clientes .container {
+    overflow-x: hidden;
 }
 
 /* Prueba Social */
