@@ -267,31 +267,39 @@ ol li {
 /* Clientes Section */
 .testimonial-card {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 40px;
-    background-color: rgba(255, 255, 255, 0.05); /* Fondo semitransparente */
-    color: var(--light-text-color); /* Texto claro para tarjetas */
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--light-text-color);
     padding: 40px;
-    border-radius: 20px; /* Bordes más redondeados */
+    border-radius: 20px;
     margin-bottom: 40px;
-    box-shadow: 0 0 25px rgba(0, 198, 255, 0.15), 0 0 50px rgba(0, 198, 255, 0.1); /* Efecto de brillo */
-    border: 1px solid rgba(0, 198, 255, 0.2); /* Borde sutil */
+    box-shadow: 0 0 25px rgba(0, 198, 255, 0.15), 0 0 50px rgba(0, 198, 255, 0.1);
+    border: 1px solid rgba(0, 198, 255, 0.2);
     text-align: left;
-    transition: all 0.3s ease; /* Para animaciones de hover */
-    backdrop-filter: blur(10px); /* Glassmorphism */
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+@media (min-width: 768px) {
+    .testimonial-card {
+        flex-direction: row;
+    }
 }
 
 #clientes .testimonial-card h3,
 #clientes .testimonial-card p {
-    color: var(--light-text-color); /* Asegurar texto claro dentro de la tarjeta */
+    color: var(--light-text-color);
 }
 
 #clientes .testimonial-card h3 {
-    color: var(--accent-color); /* Título con color de acento */
+    color: var(--accent-color);
 }
 
 .testimonial-video {
     flex: 0 0 40%;
+    max-width: 40%;
 }
 
 .testimonial-video video {
