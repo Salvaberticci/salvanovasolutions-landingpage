@@ -57,11 +57,8 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lato:wght@400;700&family=Space+Mono:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js"></script>
@@ -71,18 +68,19 @@
     <div id="particles-js"></div>
 
     <!-- Navbar -->
-    <nav id="navbar" class="navbar">
-        <div class="container navbar-container flex items-center justify-between">
+    <nav id="navbar">
+        <div class="navbar-container">
             <a href="/" class="navbar-logo">
-                <img src="assets/images/logos/logo.png" alt="SalvaNovaSolutions Logo" class="max-w-[140px]">
+                <img src="assets/images/logos/logo.png" alt="SalvaNovaSolutions Logo">
             </a>
             <div class="navbar-links">
                 <a href="/">Inicio</a>
                 <a href="/portafolio.html" class="active">Portafolio</a>
                 <a href="/servicios.html">Servicios</a>
-                <a href="/index.html#cta-final" class="cta-button ml-4">Agendar Sesión</a>
+                <span class="nav-badge">Disponibles ahora</span>
+                <a href="/index.html#cta-final" class="nav-cta">Agendar Sesión Gratuita</a>
             </div>
-            <button class="navbar-hamburger" aria-label="Menú">
+            <button class="navbar-hamburger" id="hamburger-btn" aria-label="Menú">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -93,7 +91,10 @@
     <!-- Page Hero -->
     <section class="page-hero">
         <div class="container">
-            <h1>Nuestro Portafolio de Proyectos</h1>
+            <span class="badge badge-gold" style="margin-bottom: 20px; display: inline-flex;">
+                <i class="fas fa-folder-open"></i> Casos de Éxito
+            </span>
+            <h1>Nuestro <span class="text-gradient">Portafolio</span> de Proyectos</h1>
             <p>Cada proyecto es una historia de transformación. Conoce las empresas que confiaron en nuestro equipo y los resultados que obtuvieron.</p>
         </div>
     </section>
@@ -633,32 +634,43 @@
     <!-- CTA -->
     <section class="section fade-in" style="text-align: center;">
         <div class="container">
-            <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight">¿Listo para que nuestro equipo transforme tu operación?</h2>
-            <a href="/index.html#cta-final" class="cta-button">Agendar Sesión de Diagnóstico</a>
+            <div class="cta-box">
+                <span class="badge badge-gold" style="margin-bottom: 20px; display: inline-flex; justify-content: center;">
+                    <i class="fas fa-calendar-check"></i> Diagnóstico gratuito · Sin compromiso
+                </span>
+                <h2>¿Listo para que nuestro equipo transforme tu operación?</h2>
+                <p>Agenda tu sesión de diagnóstico gratuita y descubre exactamente qué sistema necesitas para escalar tu empresa.</p>
+                <a href="/index.html#cta-final" class="cta-button" style="margin-top: 24px;">
+                    <i class="fas fa-calendar-check"></i> Agendar Sesión de Diagnóstico
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer id="footer">
         <div class="container">
-            <div
-                class="footer-content flex flex-col justify-center items-center flex-wrap gap-5 md:gap-8 text-center">
-                <div class="footer-logo flex items-center gap-4">
-                    <img src="assets/images/logos/logo.png" alt="SalvaNovaSolutions Logo">
+            <div class="footer-content">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <img src="assets/images/logos/logo.png" alt="SalvaNovaSolutions Logo">
+                    </div>
+                    <nav class="footer-nav">
+                        <a href="/">Inicio</a>
+                        <a href="/portafolio.html">Portafolio</a>
+                        <a href="/servicios.html">Servicios</a>
+                        <a href="/index.html#cta-final">Agendar Sesión</a>
+                    </nav>
                 </div>
-                <div class="footer-links flex gap-2 md:gap-5 flex-wrap justify-center">
-                    <a href="/">Inicio</a>
-                    <a href="/portafolio.html">Portafolio</a>
-                    <a href="/servicios.html">Servicios</a>
+                <div class="footer-divider"></div>
+                <div class="footer-bottom">
+                    <p class="footer-copy">© 2026 SalvaNovaSolutions. Desarrollado por <strong style="color: var(--text-muted);">Salvatore Israel Berticci Roman</strong>. RIF: V302365365. Todos los derechos reservados.</p>
+                    <div class="footer-legal">
+                        <a href="/politica-privacidad.html">Política de Privacidad</a>
+                        <a href="/eliminacion-datos.html">Eliminación de Datos</a>
+                        <a href="/condiciones-servicio.html">Condiciones del Servicio</a>
+                    </div>
                 </div>
-                <div class="footer-links flex gap-2 md:gap-5 flex-wrap justify-center">
-                    <a href="/politica-privacidad">Política de Privacidad</a>
-                    <a href="/eliminacion-datos">Eliminación de Datos</a>
-                    <a href="/condiciones-servicio">Condiciones del Servicio</a>
-                </div>
-                <p style="font-size: 0.85em; opacity: 0.7; margin-top: 10px;">© 2026 SalvaNovaSolutions. Desarrollado
-                    por <strong>Salvatore Israel Berticci Roman</strong>. RIF: V302365365. Todos los derechos
-                    reservados.</p>
             </div>
         </div>
     </footer>

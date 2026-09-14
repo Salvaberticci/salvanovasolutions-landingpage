@@ -1,3 +1,7 @@
+// ============================================================
+// SALVANOVALUTIONS — main.js v2.0
+// ============================================================
+
 // ==================== SMOOTH SCROLLING ====================
 document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', function(e) {
@@ -6,12 +10,12 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
         const target = document.querySelector(href);
         if (target) {
             e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth' });
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     });
 });
 
-// Cross-page smooth scroll (e.g. portafolio.html?filter=sistemas-web#cta-final)
+// Cross-page smooth scroll
 (function() {
     const hash = window.location.hash;
     if (hash && hash.startsWith('#')) {
@@ -28,7 +32,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     if (!navbar) return;
 
     function handleScroll() {
-        if (window.scrollY > 50) {
+        if (window.scrollY > 60) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
@@ -39,129 +43,90 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     handleScroll();
 
     // Hamburger menu
-    const hamburger = navbar.querySelector('.navbar-hamburger');
+    const hamburger = document.getElementById('hamburger-btn') || navbar.querySelector('.navbar-hamburger');
     const navLinks = navbar.querySelector('.navbar-links');
+
     if (hamburger && navLinks) {
         hamburger.addEventListener('click', function() {
             this.classList.toggle('open');
             navLinks.classList.toggle('open');
+            document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
         });
 
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', function() {
                 hamburger.classList.remove('open');
                 navLinks.classList.remove('open');
+                document.body.style.overflow = '';
             });
         });
+
+        // Close menu on outside click
+        document.addEventListener('click', function(e) {
+            if (!navbar.contains(e.target) && navLinks.classList.contains('open')) {
+                hamburger.classList.remove('open');
+                navLinks.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+        });
     }
+
+    // Active link highlight
+    const currentPath = window.location.pathname.replace(/\/$/, '');
+    navbar.querySelectorAll('.navbar-links a').forEach(link => {
+        const linkPath = new URL(link.href, window.location.origin).pathname.replace(/\/$/, '');
+        if (linkPath === currentPath) link.classList.add('active');
+    });
 })();
 
-// ==================== PARTICLES.JS ====================
-particlesJS('particles-js', {
-    "particles": {
-        "number": {
-            "value": 50,
-            "density": {
+// ==================== PARTICLES.JS (Corporate, Subtle) ====================
+if (typeof particlesJS !== 'undefined' && document.getElementById('particles-js')) {
+    particlesJS('particles-js', {
+        "particles": {
+            "number": {
+                "value": 35,
+                "density": { "enable": true, "value_area": 1200 }
+            },
+            "color": { "value": "#3b82f6" },
+            "shape": { "type": "circle" },
+            "opacity": {
+                "value": 0.25,
+                "random": true,
+                "anim": { "enable": true, "speed": 0.5, "opacity_min": 0.05, "sync": false }
+            },
+            "size": {
+                "value": 2,
+                "random": true,
+                "anim": { "enable": false }
+            },
+            "line_linked": {
                 "enable": true,
-                "value_area": 1000
+                "distance": 150,
+                "color": "#3b82f6",
+                "opacity": 0.12,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 0.8,
+                "direction": "none",
+                "random": true,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false
             }
         },
-        "color": {
-            "value": "#00c6ff"
-        },
-        "shape": {
-            "type": "circle",
-            "stroke": {
-                "width": 0,
-                "color": "#000000"
-            },
-            "polygon": {
-                "nb_sides": 5
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": { "enable": false },
+                "onclick": { "enable": false },
+                "resize": true
             }
         },
-        "opacity": {
-            "value": 0.6,
-            "random": false,
-            "anim": {
-                "enable": false,
-                "speed": 1,
-                "opacity_min": 0.1,
-                "sync": false
-            }
-        },
-        "size": {
-            "value": 3,
-            "random": true,
-            "anim": {
-                "enable": false,
-                "speed": 40,
-                "size_min": 0.1,
-                "sync": false
-            }
-        },
-        "line_linked": {
-            "enable": true,
-            "distance": 120,
-            "color": "#00c6ff",
-            "opacity": 0.5,
-            "width": 1
-        },
-        "move": {
-            "enable": true,
-            "speed": 2,
-            "direction": "none",
-            "random": false,
-            "straight": false,
-            "out_mode": "out",
-            "bounce": false,
-            "attract": {
-                "enable": false,
-                "rotateX": 600,
-                "rotateY": 1200
-            }
-        }
-    },
-    "interactivity": {
-        "detect_on": "canvas",
-        "events": {
-            "onhover": {
-                "enable": false,
-                "mode": "grab"
-            },
-            "onclick": {
-                "enable": false,
-                "mode": "push"
-            },
-            "resize": true
-        },
-        "modes": {
-            "grab": {
-                "distance": 140,
-                "line_linked": {
-                    "opacity": 1
-                }
-            },
-            "bubble": {
-                "distance": 400,
-                "size": 40,
-                "duration": 2,
-                "opacity": 8,
-                "speed": 3
-            },
-            "repulse": {
-                "distance": 200,
-                "duration": 0.4
-            },
-            "push": {
-                "particles_nb": 4
-            },
-            "remove": {
-                "particles_nb": 2
-            }
-        }
-    },
-    "retina_detect": false
-});
+        "retina_detect": false
+    });
+}
 
 // ==================== SCROLL FADE-IN ====================
 const fadeObserver = new IntersectionObserver((entries) => {
@@ -170,9 +135,83 @@ const fadeObserver = new IntersectionObserver((entries) => {
             entry.target.classList.add('visible');
         }
     });
-}, { threshold: 0.1 });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
 document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+
+// ==================== ANIMATED COUNTERS ====================
+(function() {
+    const counters = document.querySelectorAll('.counter-number');
+    if (!counters.length) return;
+
+    function easeOutQuart(t) {
+        return 1 - Math.pow(1 - t, 4);
+    }
+
+    function animateCounter(el) {
+        const target = parseFloat(el.dataset.target);
+        const prefix = el.dataset.prefix || '';
+        const suffix = el.dataset.suffix || '';
+        const duration = 1800;
+        const startTime = performance.now();
+
+        function update(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const easedProgress = easeOutQuart(progress);
+            const current = Math.round(easedProgress * target);
+            el.textContent = prefix + current + suffix;
+            if (progress < 1) {
+                requestAnimationFrame(update);
+            } else {
+                el.textContent = prefix + target + suffix;
+            }
+        }
+
+        requestAnimationFrame(update);
+    }
+
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.dataset.animated) {
+                entry.target.dataset.animated = 'true';
+                animateCounter(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => counterObserver.observe(counter));
+})();
+
+// ==================== FAQ ACCORDION ====================
+(function() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    if (!faqItems.length) return;
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+
+        if (!question || !answer) return;
+
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+
+            // Close all
+            faqItems.forEach(other => {
+                other.classList.remove('active');
+                const otherAnswer = other.querySelector('.faq-answer');
+                if (otherAnswer) otherAnswer.style.maxHeight = '0';
+            });
+
+            // Open clicked if it was closed
+            if (!isActive) {
+                item.classList.add('active');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        });
+    });
+})();
 
 // ==================== PORTFOLIO FILTERS ====================
 (function() {
@@ -197,9 +236,7 @@ document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
         const visible = getVisibleCards();
         cards.forEach(card => card.classList.add('proyecto-oculto'));
         visible.forEach((card, i) => {
-            if (i < showing) {
-                card.classList.remove('proyecto-oculto');
-            }
+            if (i < showing) card.classList.remove('proyecto-oculto');
         });
         if (counter) {
             counter.textContent = `Mostrando ${Math.min(showing, visible.length)} de ${visible.length} proyectos`;
@@ -238,7 +275,7 @@ document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
         });
     }
 
-    // Check URL for filter param (e.g. ?filter=sistemas-web)
+    // URL filter param support
     const urlParams = new URLSearchParams(window.location.search);
     const filterParam = urlParams.get('filter');
     if (filterParam) {
@@ -284,7 +321,6 @@ document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
 
     function updateButton() {
         const textSpan = btn.querySelector('.btn-text');
-        const icon = btn.querySelector('.fa-chevron-down');
         if (showing >= TOTAL) {
             if (textSpan) textSpan.textContent = 'Mostrar menos';
             btn.classList.add('rotated');
