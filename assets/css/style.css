@@ -1226,20 +1226,18 @@ a { color: inherit; text-decoration: none; }
     margin: -28px -28px 20px;
     position: relative;
     overflow: hidden;
-    padding-bottom: 56.25%;
+    aspect-ratio: 16 / 9;
 }
 
 .card-media lite-youtube {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .card-image-placeholder {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    height: 100%;
     background: var(--surface-2);
     border-bottom: 1px solid var(--border);
     display: flex;
