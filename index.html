@@ -1,36 +1,29 @@
 <!DOCTYPE html>
+
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistemas de Control Operativo y Arquitectura de Datos | SalvaNovaSolutions</title>
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" sizes="48x48" href="/assets/images/logos/favicon.png">
-    <link rel="apple-touch-icon" href="/assets/images/logos/favicon.png">
-    <link rel="canonical" href="https://salvanovasolutions.online/">
-    <meta name="description"
-        content="Somos una agencia de desarrollo de software especializada en sistemas de control operativo a medida para empresas de servicios.">
-    <meta name="keywords"
-        content="control operativo, sistemas internos, arquitectura de datos, gestión de servicios, eficiencia operativa, orden empresarial, toma de decisiones, Salvatore Berticci, SalvaNovaSolutions">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://salvanovasolutions.online">
-    <meta property="og:title" content="Sistemas de Control Operativo y Arquitectura de Datos">
-    <meta property="og:description"
-        content="Diseño e implementación de sistemas de control a medida. Transforma el caos operativo en visibilidad y datos reales para tu empresa de servicios.">
-    <meta property="og:image" content="https://salvanovasolutions.online/assets/images/logos/logo.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://salvanovasolutions.online">
-    <meta property="twitter:title" content="Sistemas de Control Operativo y Arquitectura de Datos">
-    <meta property="twitter:description"
-        content="Transforma tu gestión operativa con sistemas internos a medida. Orden, control y trazabilidad total para empresas de servicios.">
-    <meta property="twitter:image" content="https://salvanovasolutions.online/assets/images/logos/logo.png">
-
-    <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sistemas de Control Operativo y Arquitectura de Datos | SalvaNovaSolutions</title>
+<link href="/favicon.ico" rel="icon" sizes="any"/>
+<link href="/assets/images/logos/favicon.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="/assets/images/logos/favicon.png" rel="apple-touch-icon"/>
+<link href="https://salvanovasolutions.online/" rel="canonical"/>
+<meta content="Somos una agencia de desarrollo de software especializada en sistemas de control operativo a medida para empresas de servicios." name="description"/>
+<meta content="control operativo, sistemas internos, arquitectura de datos, gestión de servicios, eficiencia operativa, orden empresarial, toma de decisiones, Salvatore Berticci, SalvaNovaSolutions" name="keywords"/>
+<!-- Open Graph / Facebook -->
+<meta content="website" property="og:type"/>
+<meta content="https://salvanovasolutions.online" property="og:url"/>
+<meta content="Sistemas de Control Operativo y Arquitectura de Datos" property="og:title"/>
+<meta content="Diseño e implementación de sistemas de control a medida. Transforma el caos operativo en visibilidad y datos reales para tu empresa de servicios." property="og:description"/>
+<meta content="https://salvanovasolutions.online/assets/images/logos/logo.png" property="og:image"/>
+<!-- Twitter -->
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://salvanovasolutions.online" property="twitter:url"/>
+<meta content="Sistemas de Control Operativo y Arquitectura de Datos" property="twitter:title"/>
+<meta content="Transforma tu gestión operativa con sistemas internos a medida. Orden, control y trazabilidad total para empresas de servicios." property="twitter:description"/>
+<meta content="https://salvanovasolutions.online/assets/images/logos/logo.png" property="twitter:image"/>
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
@@ -55,605 +48,578 @@
       "priceRange": "$$$"
     }
     </script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" type="module"></script>
 </head>
-
 <body class="has-navbar">
-    <div id="particles-js"></div>
-
-    <!-- ==================== NAVBAR ==================== -->
-    <nav id="navbar">
-        <div class="navbar-container">
-            <a href="/" class="navbar-logo">
-                <img src="assets/images/logos/logo.png" alt="SalvaNovaSolutions Logo">
-            </a>
-            <div class="navbar-links">
-                <a href="/" class="active">Inicio</a>
-                <a href="/portafolio.html">Portafolio</a>
-                <a href="/servicios.html">Servicios</a>
-                <span class="nav-badge">Disponibles ahora</span>
-                <a href="#cta-final" class="nav-cta">Agendar Sesión Gratuita</a>
-            </div>
-            <button class="navbar-hamburger" id="hamburger-btn" aria-label="Menú">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- ==================== HERO / HEADER ==================== -->
-    <header id="header">
-        <div class="container" style="text-align:center; padding-top: 20px; padding-bottom: 0;">
-            <div class="hero-eyebrow">
-                <span class="badge badge-blue"><i class="fas fa-shield-halved"></i> Agencia de Software B2B</span>
-                <span class="badge badge-gold"><i class="fas fa-trophy"></i> +15 empresas transformadas</span>
-            </div>
-            <h1 class="hero-title">
-                Convertimos el caos operativo<br>
-                en <span class="line-accent">sistemas que trabajan</span><br>
+<div id="particles-js"></div>
+<!-- ==================== NAVBAR ==================== -->
+<nav id="navbar">
+<div class="navbar-container">
+<a class="navbar-logo" href="/">
+<img alt="SalvaNovaSolutions Logo" src="assets/images/logos/logo.png"/>
+</a>
+<div class="navbar-links">
+<a class="active" href="/">Inicio</a>
+<a href="/portafolio.html">Portafolio</a>
+<a href="/servicios.html">Servicios</a>
+<span class="nav-badge">Disponibles ahora</span>
+<a class="nav-cta" href="#cta-final">Agendar Sesión Gratuita</a>
+</div>
+<button aria-label="Menú" class="navbar-hamburger" id="hamburger-btn">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+</nav>
+<!-- ==================== HERO / HEADER ==================== -->
+<header id="header">
+<div class="container" style="text-align:center; padding-top: 20px; padding-bottom: 0;">
+<div class="hero-eyebrow">
+<span class="badge badge-blue"><i class="fas fa-shield-halved"></i> Agencia de Software B2B</span>
+<span class="badge badge-gold"><i class="fas fa-trophy"></i> +15 empresas transformadas</span>
+</div>
+<h1 class="hero-title">
+                Convertimos el caos operativo<br/>
+                en <span class="line-accent">sistemas que trabajan</span><br/>
                 por tu empresa
             </h1>
-            <p class="hero-subtitle">
+<p class="hero-subtitle">
                 Diseñamos e implementamos sistemas internos a medida para empresas de servicios que necesitan orden, visibilidad y datos reales para tomar decisiones.
             </p>
-            <div class="hero-ctas">
-                <a href="#cta-final" class="btn btn-primary btn-lg" id="hero-cta-primary">
-                    <i class="fas fa-calendar-check"></i> Agenda tu Diagnóstico Gratuito
+<div class="hero-ctas">
+<a class="btn btn-primary btn-lg" href="#cta-final" id="hero-cta-primary">
+<i class="fas fa-calendar-check"></i> Agenda tu Diagnóstico Gratuito
                 </a>
-                <a href="/portafolio.html" class="btn btn-secondary btn-lg">
+<a class="btn btn-secondary btn-lg" href="/portafolio.html">
                     Ver Casos de Éxito <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-            <!-- Animated Metrics -->
-            <div class="hero-metrics" id="hero-metrics">
-                <div class="metric-item">
-                    <div class="metric-number counter-number" data-target="95" data-suffix="%">0%</div>
-                    <div class="metric-label">Reducción tiempo operativo</div>
-                </div>
-                <div class="metric-item">
-                    <div class="metric-number counter-number" data-target="15" data-prefix="+" data-suffix="+">0</div>
-                    <div class="metric-label">Empresas transformadas</div>
-                </div>
-                <div class="metric-item">
-                    <div class="metric-number counter-number" data-target="4" data-suffix="–8 sem">0</div>
-                    <div class="metric-label">Tiempo de implementación</div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- ==================== HERO VIDEO ==================== -->
-    <section id="hero-intro" class="section" style="padding-top: 32px; padding-bottom: 60px;">
-        <div class="container" style="text-align:center;">
-            <p class="video-intro" style="margin-bottom: 20px; font-size: 0.92rem;">
-                <i class="fas fa-play-circle" style="color: var(--accent);"></i>
+</a>
+</div>
+<!-- Animated Metrics -->
+<div class="hero-metrics" id="hero-metrics">
+<div class="metric-item">
+<div class="metric-number counter-number" data-suffix="%" data-target="95">0%</div>
+<div class="metric-label">Reducción tiempo operativo</div>
+</div>
+<div class="metric-item">
+<div class="metric-number counter-number" data-prefix="+" data-suffix="+" data-target="15">0</div>
+<div class="metric-label">Empresas transformadas</div>
+</div>
+<div class="metric-item">
+<div class="metric-number counter-number" data-suffix="–8 sem" data-target="4">0</div>
+<div class="metric-label">Tiempo de implementación</div>
+</div>
+</div>
+</div>
+</header>
+<!-- ==================== HERO VIDEO ==================== -->
+<section class="section" id="hero-intro" style="padding-top: 32px; padding-bottom: 60px;">
+<div class="container" style="text-align:center;">
+<p class="video-intro" style="margin-bottom: 20px; font-size: 0.92rem;">
+<i class="fas fa-play-circle" style="color: var(--accent);"></i>
                 Descubre en 2 minutos cómo transformamos tu operación
             </p>
-            <div class="visual" style="max-width: 860px; margin: 0 auto;">
-                <lite-youtube videoid="x90lsx92yik"
-                    params="controls=0&modestbranding=1&rel=0&fs=0&disablekb=1&iv_load_policy=3&start=1"></lite-youtube>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== TRUST STRIP ==================== -->
-    <section id="trust-strip">
-        <div class="container">
-            <p class="trust-label">Empresas que ya confían en nosotros</p>
-            <div class="trust-logos">
-                <div class="trust-logo-item">
-                    <div class="trust-logo-icon"><i class="fas fa-wifi"></i></div>
-                    <span class="trust-logo-name">Galanet Escuque</span>
-                </div>
-                <div class="trust-logo-item">
-                    <div class="trust-logo-icon"><i class="fas fa-store"></i></div>
-                    <span class="trust-logo-name">Minimarket Montolis</span>
-                </div>
-                <div class="trust-logo-item">
-                    <div class="trust-logo-icon"><i class="fas fa-mobile-screen"></i></div>
-                    <span class="trust-logo-name">App Musu</span>
-                </div>
-                <div class="trust-logo-item">
-                    <div class="trust-logo-icon"><i class="fas fa-handshake"></i></div>
-                    <span class="trust-logo-name">TratoSeguro</span>
-                </div>
-                <div class="trust-logo-item">
-                    <div class="trust-logo-icon"><i class="fas fa-microchip"></i></div>
-                    <span class="trust-logo-name">SalvaTechnology</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== PAIN POINTS / PROBLEMA-SOLUCIÓN ==================== -->
-    <section id="pain-points" class="section fade-in">
-        <div class="container">
-            <div class="section-header" style="text-align:center; margin-bottom: 52px;">
-                <span class="badge badge-cyan" style="margin-bottom: 16px; display: inline-flex;">
-                    <i class="fas fa-bullseye"></i> ¿Para quién es esto?
+<div class="visual" style="max-width: 860px; margin: 0 auto;">
+<lite-youtube params="controls=0&amp;modestbranding=1&amp;rel=0&amp;fs=0&amp;disablekb=1&amp;iv_load_policy=3&amp;start=1" videoid="x90lsx92yik"></lite-youtube>
+</div>
+</div>
+</section>
+<!-- ==================== TRUST STRIP ==================== -->
+<section id="trust-strip">
+<div class="container">
+<p class="trust-label">Empresas que ya confían en nosotros</p>
+<div class="trust-logos">
+<div class="trust-logo-item">
+<div class="trust-logo-icon"><i class="fas fa-wifi"></i></div>
+<span class="trust-logo-name">Galanet Escuque</span>
+</div>
+<div class="trust-logo-item">
+<div class="trust-logo-icon"><i class="fas fa-store"></i></div>
+<span class="trust-logo-name">Minimarket Montolis</span>
+</div>
+<div class="trust-logo-item">
+<div class="trust-logo-icon"><i class="fas fa-mobile-screen"></i></div>
+<span class="trust-logo-name">App Musu</span>
+</div>
+<div class="trust-logo-item">
+<div class="trust-logo-icon"><i class="fas fa-handshake"></i></div>
+<span class="trust-logo-name">TratoSeguro</span>
+</div>
+<div class="trust-logo-item">
+<div class="trust-logo-icon"><i class="fas fa-microchip"></i></div>
+<span class="trust-logo-name">SalvaTechnology</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== PAIN POINTS / PROBLEMA-SOLUCIÓN ==================== -->
+<section class="section fade-in" id="pain-points">
+<div class="container">
+<div class="section-header" style="text-align:center; margin-bottom: 52px;">
+<span class="badge badge-cyan" style="margin-bottom: 16px; display: inline-flex;">
+<i class="fas fa-bullseye"></i> ¿Para quién es esto?
                 </span>
-                <h2>¿Tu empresa se siente atrapada en<br>procesos que no escalan?</h2>
-                <p>Si te identificas con alguno de estos puntos, tienes un problema de control operativo que podemos resolver.</p>
-            </div>
-            <div class="pain-grid">
-                <!-- Pain points list -->
-                <div>
-                    <ul class="pain-list">
-                        <li>
-                            <span class="pain-icon">😤</span>
-                            <span>Tu empresa creció pero los procesos quedaron en <strong>hojas de Excel frágiles</strong> y correos de WhatsApp</span>
-                        </li>
-                        <li>
-                            <span class="pain-icon">⏳</span>
-                            <span>Pierdes <strong>horas al día</strong> en tareas administrativas repetitivas que debería resolver un sistema</span>
-                        </li>
-                        <li>
-                            <span class="pain-icon">🔍</span>
-                            <span>No sabes <strong>qué pasa en tu operación en tiempo real</strong>: inventario, nómina, clientes…</span>
-                        </li>
-                        <li>
-                            <span class="pain-icon">🎲</span>
-                            <span>Tomas decisiones <strong>"a ojo"</strong> porque los datos que tienes son lentos, inexactos o incompletos</span>
-                        </li>
-                        <li>
-                            <span class="pain-icon">🔗</span>
-                            <span>Cada nueva persona en el equipo <strong>rompe el sistema</strong> porque depende del conocimiento de una sola persona</span>
-                        </li>
-                        <li>
-                            <span class="pain-icon">📉</span>
-                            <span>Cada cliente nuevo genera <strong>más caos interno</strong> en lugar de más rentabilidad</span>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Solution -->
-                <div class="solution-box">
-                    <span class="badge badge-cyan" style="margin-bottom: 20px; display: inline-flex;">
-                        <i class="fas fa-check-circle"></i> La solución
+<h2>¿Tu empresa se siente atrapada en<br/>procesos que no escalan?</h2>
+<p>Si te identificas con alguno de estos puntos, tienes un problema de control operativo que podemos resolver.</p>
+</div>
+<div class="pain-grid">
+<!-- Pain points list -->
+<div>
+<ul class="pain-list">
+<li>
+<span class="pain-icon">😤</span>
+<span>Tu empresa creció pero los procesos quedaron en <strong>hojas de Excel frágiles</strong> y correos de WhatsApp</span>
+</li>
+<li>
+<span class="pain-icon">⏳</span>
+<span>Pierdes <strong>horas al día</strong> en tareas administrativas repetitivas que debería resolver un sistema</span>
+</li>
+<li>
+<span class="pain-icon">🔍</span>
+<span>No sabes <strong>qué pasa en tu operación en tiempo real</strong>: inventario, nómina, clientes…</span>
+</li>
+<li>
+<span class="pain-icon">🎲</span>
+<span>Tomas decisiones <strong>"a ojo"</strong> porque los datos que tienes son lentos, inexactos o incompletos</span>
+</li>
+<li>
+<span class="pain-icon">🔗</span>
+<span>Cada nueva persona en el equipo <strong>rompe el sistema</strong> porque depende del conocimiento de una sola persona</span>
+</li>
+<li>
+<span class="pain-icon">📉</span>
+<span>Cada cliente nuevo genera <strong>más caos interno</strong> en lugar de más rentabilidad</span>
+</li>
+</ul>
+</div>
+<!-- Solution -->
+<div class="solution-box">
+<span class="badge badge-cyan" style="margin-bottom: 20px; display: inline-flex;">
+<i class="fas fa-check-circle"></i> La solución
                     </span>
-                    <h3 style="color: var(--text); font-size: 1.3rem; margin-bottom: 12px; line-height: 1.35;">
+<h3 style="color: var(--text); font-size: 1.3rem; margin-bottom: 12px; line-height: 1.35;">
                         Un sistema interno a medida que te devuelve el control total
                     </h3>
-                    <p style="font-size: 0.9rem; margin-bottom: 4px;">Diseñamos e implementamos software que:</p>
-                    <ul class="solution-checklist">
-                        <li><i class="fas fa-check"></i> <span>Centraliza tu operación en una sola plataforma</span></li>
-                        <li><i class="fas fa-check"></i> <span>Elimina los procesos manuales y las fuentes de error</span></li>
-                        <li><i class="fas fa-check"></i> <span>Te da visibilidad total en tiempo real sobre cada área</span></li>
-                        <li><i class="fas fa-check"></i> <span>Convierte tus datos en decisiones inteligentes</span></li>
-                        <li><i class="fas fa-check"></i> <span>Escala contigo sin que el caos escale también</span></li>
-                    </ul>
-                    <a href="#cta-final" class="cta-button" style="margin-top: 28px; font-size: 0.9rem; padding: 13px 28px;">
+<p style="font-size: 0.9rem; margin-bottom: 4px;">Diseñamos e implementamos software que:</p>
+<ul class="solution-checklist">
+<li><i class="fas fa-check"></i> <span>Centraliza tu operación en una sola plataforma</span></li>
+<li><i class="fas fa-check"></i> <span>Elimina los procesos manuales y las fuentes de error</span></li>
+<li><i class="fas fa-check"></i> <span>Te da visibilidad total en tiempo real sobre cada área</span></li>
+<li><i class="fas fa-check"></i> <span>Convierte tus datos en decisiones inteligentes</span></li>
+<li><i class="fas fa-check"></i> <span>Escala contigo sin que el caos escale también</span></li>
+</ul>
+<a class="cta-button" href="#cta-final" style="margin-top: 28px; font-size: 0.9rem; padding: 13px 28px;">
                         Agenda diagnóstico gratuito <i class="fas fa-arrow-right" style="margin-left: 6px;"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== SERVICIOS ==================== -->
-    <section id="servicios-resumen" class="section section--alt fade-in">
-        <div class="container">
-            <div class="section-header">
-                <span class="badge badge-blue" style="margin-bottom: 16px; display: inline-flex;">
-                    <i class="fas fa-rocket"></i> Nuestros Servicios
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== SERVICIOS ==================== -->
+<section class="section section--alt fade-in" id="servicios-resumen">
+<div class="container">
+<div class="section-header">
+<span class="badge badge-blue" style="margin-bottom: 16px; display: inline-flex;">
+<i class="fas fa-rocket"></i> Nuestros Servicios
                 </span>
-                <h2>Todo lo que tu empresa necesita<br>para operar en el siglo XXI</h2>
-                <p>Soluciones tecnológicas a medida orientadas a resultados, no a funcionalidades genéricas.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon-wrap">
-                        <i class="fas fa-database service-icon"></i>
-                    </div>
-                    <h3>Sistemas Web a Medida</h3>
-                    <p>Plataformas personalizadas que centralizan tu operación, eliminan el Excel y te dan control total sobre inventarios, nóminas, facturación y reportes en tiempo real.</p>
-                    <a href="/servicios.html#sistemas" class="card-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon-wrap">
-                        <i class="fas fa-globe service-icon"></i>
-                    </div>
-                    <h3>Páginas Web &amp; Landing Pages</h3>
-                    <p>Sitios web profesionales y landing pages optimizadas para convertir visitantes en leads y clientes, con diseño responsivo y estructura orientada a resultados.</p>
-                    <a href="/servicios.html#paginas" class="card-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon-wrap">
-                        <i class="fas fa-robot service-icon"></i>
-                    </div>
-                    <h3>Bots e Inteligencia Artificial</h3>
-                    <p>Bots de WhatsApp, LinkedIn y redes sociales que atienden 24/7, califican leads, publican contenido y automatizan tareas repetitivas con IA.</p>
-                    <a href="/servicios.html#bots" class="card-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon-wrap">
-                        <i class="fas fa-mobile-screen service-icon"></i>
-                    </div>
-                    <h3>Aplicaciones Móviles</h3>
-                    <p>Apps nativas e híbridas para POS offline, gestión de ventas, control de inventario y más, funcionales incluso sin conexión a Internet.</p>
-                    <a href="/servicios.html#apps" class="card-link">Ver detalles <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div style="text-align:center;">
-                <a href="/servicios.html" class="cta-button">
-                    <i class="fas fa-layer-group"></i> Conocer todos los servicios
+<h2>Todo lo que tu empresa necesita<br/>para operar en el siglo XXI</h2>
+<p>Soluciones tecnológicas a medida orientadas a resultados, no a funcionalidades genéricas.</p>
+</div>
+<div class="services-grid">
+<div class="service-card">
+<div class="service-icon-wrap">
+<i class="fas fa-database service-icon"></i>
+</div>
+<h3>Sistemas Web a Medida</h3>
+<p>Plataformas personalizadas que centralizan tu operación, eliminan el Excel y te dan control total sobre inventarios, nóminas, facturación y reportes en tiempo real.</p>
+<a class="card-link" href="/servicios.html#sistemas">Ver detalles <i class="fas fa-arrow-right"></i></a>
+</div>
+<div class="service-card">
+<div class="service-icon-wrap">
+<i class="fas fa-globe service-icon"></i>
+</div>
+<h3>Páginas Web &amp; Landing Pages</h3>
+<p>Sitios web profesionales y landing pages optimizadas para convertir visitantes en leads y clientes, con diseño responsivo y estructura orientada a resultados.</p>
+<a class="card-link" href="/servicios.html#paginas">Ver detalles <i class="fas fa-arrow-right"></i></a>
+</div>
+<div class="service-card">
+<div class="service-icon-wrap">
+<i class="fas fa-robot service-icon"></i>
+</div>
+<h3>Bots e Inteligencia Artificial</h3>
+<p>Bots de WhatsApp, LinkedIn y redes sociales que atienden 24/7, califican leads, publican contenido y automatizan tareas repetitivas con IA.</p>
+<a class="card-link" href="/servicios.html#bots">Ver detalles <i class="fas fa-arrow-right"></i></a>
+</div>
+<div class="service-card">
+<div class="service-icon-wrap">
+<i class="fas fa-mobile-screen service-icon"></i>
+</div>
+<h3>Aplicaciones Móviles</h3>
+<p>Apps nativas e híbridas para POS offline, gestión de ventas, control de inventario y más, funcionales incluso sin conexión a Internet.</p>
+<a class="card-link" href="/servicios.html#apps">Ver detalles <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+<div style="text-align:center;">
+<a class="cta-button" href="/servicios.html">
+<i class="fas fa-layer-group"></i> Conocer todos los servicios
                 </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== CÓMO TRABAJAMOS ==================== -->
-    <section id="como-trabajamos" class="section fade-in">
-        <div class="container">
-            <div class="section-header">
-                <span class="badge badge-cyan" style="margin-bottom: 16px; display: inline-flex;">
-                    <i class="fas fa-route"></i> Proceso
+</div>
+</div>
+</section>
+<!-- ==================== CÓMO TRABAJAMOS ==================== -->
+<section class="section fade-in" id="como-trabajamos">
+<div class="container">
+<div class="section-header">
+<span class="badge badge-cyan" style="margin-bottom: 16px; display: inline-flex;">
+<i class="fas fa-route"></i> Proceso
                 </span>
-                <h2>Cómo transformamos tu operación en 3 pasos</h2>
-                <p>Un proceso claro, sin sorpresas y orientado a resultados desde el primer día.</p>
-            </div>
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="step-num">01</div>
-                    <div>
-                        <h3>Diagnóstico Operativo Gratuito</h3>
-                        <p>En una sesión de 30 minutos analizamos tu operación actual, identificamos los puntos de fuga de control, tiempo y dinero, y te entregamos un informe claro.</p>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-num">02</div>
-                    <div>
-                        <h3>Propuesta y Arquitectura a Medida</h3>
-                        <p>Diseñamos la arquitectura del sistema adaptada 100% a tu realidad operativa. Te presentamos el plan de implementación, plazos y entregables específicos.</p>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-num">03</div>
-                    <div>
-                        <h3>Implementación con Soporte Total</h3>
-                        <p>Construimos, desplegamos y entrenamos a tu equipo en el nuevo sistema. En 4 a 8 semanas tienes control operativo total con soporte continuo.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== RESULTADOS ==================== -->
-    <section id="resultados" class="section section--alt fade-in">
-        <div class="container">
-            <div class="results-container">
-                <div class="results-text">
-                    <span class="badge badge-gold" style="margin-bottom: 20px; display: inline-flex;">
-                        <i class="fas fa-chart-line"></i> Caso de Éxito Real
+<h2>Cómo transformamos tu operación en 3 pasos</h2>
+<p>Un proceso claro, sin sorpresas y orientado a resultados desde el primer día.</p>
+</div>
+<div class="process-steps">
+<div class="process-step">
+<div class="step-num">01</div>
+<div>
+<h3>Diagnóstico Operativo Gratuito</h3>
+<p>En una sesión de 30 minutos analizamos tu operación actual, identificamos los puntos de fuga de control, tiempo y dinero, y te entregamos un informe claro.</p>
+</div>
+</div>
+<div class="process-step">
+<div class="step-num">02</div>
+<div>
+<h3>Propuesta y Arquitectura a Medida</h3>
+<p>Diseñamos la arquitectura del sistema adaptada 100% a tu realidad operativa. Te presentamos el plan de implementación, plazos y entregables específicos.</p>
+</div>
+</div>
+<div class="process-step">
+<div class="step-num">03</div>
+<div>
+<h3>Implementación con Soporte Total</h3>
+<p>Construimos, desplegamos y entrenamos a tu equipo en el nuevo sistema. En 4 a 8 semanas tienes control operativo total con soporte continuo.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== RESULTADOS ==================== -->
+<section class="section section--alt fade-in" id="resultados">
+<div class="container">
+<div class="results-container">
+<div class="results-text">
+<span class="badge badge-gold" style="margin-bottom: 20px; display: inline-flex;">
+<i class="fas fa-chart-line"></i> Caso de Éxito Real
                     </span>
-                    <h2>De la Incertidumbre<br>a la Certeza Operativa</h2>
-                    <p>El control operativo no es exclusivo de las grandes corporaciones. Una arquitectura de datos bien diseñada permite que cualquier empresa de servicios elimine el caos interno.</p>
-                    <p>En un proyecto para el sector de <strong>telecomunicaciones</strong>, nuestro equipo estructuró un sistema central para gestionar inventario y nómina. Lo que antes era un registro manual disperso, se convirtió en un flujo de datos centralizado.</p>
-                    <p>El resultado fue una reducción del <strong>95% en los tiempos de respuesta operativa</strong>: procesos que requerían la atención de 5 personas durante 6 horas, hoy se ejecutan en 10 minutos con precisión absoluta.</p>
-                    <p>Hoy, la dirección cuenta con <strong>trazabilidad completa y métricas en tiempo real</strong>, lo que permite una ejecución impecable.</p>
-                    <a href="#cta-final" class="cta-button results-cta" style="margin-top: 28px; display: inline-flex;">
+<h2>De la Incertidumbre<br/>a la Certeza Operativa</h2>
+<p>El control operativo no es exclusivo de las grandes corporaciones. Una arquitectura de datos bien diseñada permite que cualquier empresa de servicios elimine el caos interno.</p>
+<p>En un proyecto para el sector de <strong>telecomunicaciones</strong>, nuestro equipo estructuró un sistema central para gestionar inventario y nómina. Lo que antes era un registro manual disperso, se convirtió en un flujo de datos centralizado.</p>
+<p>El resultado fue una reducción del <strong>95% en los tiempos de respuesta operativa</strong>: procesos que requerían la atención de 5 personas durante 6 horas, hoy se ejecutan en 10 minutos con precisión absoluta.</p>
+<p>Hoy, la dirección cuenta con <strong>trazabilidad completa y métricas en tiempo real</strong>, lo que permite una ejecución impecable.</p>
+<a class="cta-button results-cta" href="#cta-final" style="margin-top: 28px; display: inline-flex;">
                         Genera una transformación similar en tu empresa
                     </a>
-                </div>
-
-                <div class="results-graph">
-                    <div class="graph-placeholder">
-                        <div class="graph-header">
-                            <span>Resultados: Empresa de Telecom Regional</span>
-                            <span class="graph-amount">Reducción del 95% del Tiempo Operativo</span>
-                        </div>
-                        <img src="assets/images/resultchart.png" alt="Gráfico de resultados operativos" style="width: 100%; border-radius: 10px; margin: 12px 0;" loading="lazy">
-                        <div class="graph-footer">
-                            <span>Tareas de Inventario y Nómina</span>
-                        </div>
-                        <div style="display: flex; justify-content: space-between; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border);">
-                            <div style="text-align:center; flex:1;">
-                                <div style="font-family: var(--font-mono); font-weight: 700; font-size: 1.3rem; color: #ef4444;">6 horas</div>
-                                <div style="font-size: 0.72rem; color: var(--text-subtle); margin-top: 2px;">ANTES</div>
-                            </div>
-                            <div style="display: flex; align-items: center; color: var(--text-subtle); font-size: 1.2rem;">→</div>
-                            <div style="text-align:center; flex:1;">
-                                <div style="font-family: var(--font-mono); font-weight: 700; font-size: 1.3rem; color: var(--success);">10 min</div>
-                                <div style="font-size: 0.72rem; color: var(--text-subtle); margin-top: 2px;">DESPUÉS</div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="graph-caption">(Disminución de personal operativo y errores en tareas repetitivas)</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== SOBRE NOSOTROS ==================== -->
-    <section id="sobre-mi" class="section fade-in">
-        <div class="container">
-            <div class="about-me-container">
-                <div class="about-me-info">
-                    <span class="badge badge-blue" style="margin-bottom: 20px; display: inline-flex;">
-                        <i class="fas fa-users"></i> Quiénes somos
+</div>
+<div class="results-graph">
+<div class="graph-placeholder">
+<div class="graph-header">
+<span>Resultados: Empresa de Telecom Regional</span>
+<span class="graph-amount">Reducción del 95% del Tiempo Operativo</span>
+</div>
+<img alt="Gráfico de resultados operativos" loading="lazy" src="assets/images/resultchart.png" style="width: 100%; border-radius: 10px; margin: 12px 0;"/>
+<div class="graph-footer">
+<span>Tareas de Inventario y Nómina</span>
+</div>
+<div style="display: flex; justify-content: space-between; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border);">
+<div style="text-align:center; flex:1;">
+<div style="font-family: var(--font-mono); font-weight: 700; font-size: 1.3rem; color: #ef4444;">6 horas</div>
+<div style="font-size: 0.72rem; color: var(--text-subtle); margin-top: 2px;">ANTES</div>
+</div>
+<div style="display: flex; align-items: center; color: var(--text-subtle); font-size: 1.2rem;">→</div>
+<div style="text-align:center; flex:1;">
+<div style="font-family: var(--font-mono); font-weight: 700; font-size: 1.3rem; color: var(--success);">10 min</div>
+<div style="font-size: 0.72rem; color: var(--text-subtle); margin-top: 2px;">DESPUÉS</div>
+</div>
+</div>
+</div>
+<p class="graph-caption">(Disminución de personal operativo y errores en tareas repetitivas)</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== SOBRE NOSOTROS ==================== -->
+<section class="section fade-in" id="sobre-mi">
+<div class="container">
+<div class="about-me-container">
+<div class="about-me-info">
+<span class="badge badge-blue" style="margin-bottom: 20px; display: inline-flex;">
+<i class="fas fa-users"></i> Quiénes somos
                     </span>
-                    <h2>Especialistas en Sistemas de Control Operativo</h2>
-                    <h3>Nuestro Equipo</h3>
-                    <span class="handle">@salvanovasolutions</span>
-                    <p>Somos un equipo de desarrolladores y consultores especializados en crear sistemas de control operativo que transforman la forma en que las empresas gestionan su operación.</p>
-                    <p>Ayudamos a empresas de servicios a dar el salto del caos operativo a la eficiencia tecnológica. Con años de experiencia en desarrollo de software, nos especializamos en transformar negocios que han crecido más rápido que sus procesos.</p>
-                    <p>Nuestro enfoque no es solo escribir código, sino diseñar e implementar sistemas internos a medida que devuelven el control total al dueño. Aportamos trazabilidad absoluta y datos precisos para que puedas tomar decisiones basadas en criterios reales.</p>
-                </div>
-                <div class="about-me-image">
-                    <img src="assets/images/foto-mia.webp" alt="Salvatore Berticci — SalvaNovaSolutions" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== PROYECTOS DESTACADOS ==================== -->
-    <section id="proyectos-destacados" class="section section--alt fade-in">
-        <div class="container">
-            <div class="section-header">
-                <span class="badge badge-gold" style="margin-bottom: 16px; display: inline-flex;">
-                    <i class="fas fa-star"></i> Portafolio
+<h2>Especialistas en Sistemas de Control Operativo</h2>
+<h3>Nuestro Equipo</h3>
+<span class="handle">@salvanovasolutions</span>
+<p>Somos un equipo de desarrolladores y consultores especializados en crear sistemas de control operativo que transforman la forma en que las empresas gestionan su operación.</p>
+<p>Ayudamos a empresas de servicios a dar el salto del caos operativo a la eficiencia tecnológica. Con años de experiencia en desarrollo de software, nos especializamos en transformar negocios que han crecido más rápido que sus procesos.</p>
+<p>Nuestro enfoque no es solo escribir código, sino diseñar e implementar sistemas internos a medida que devuelven el control total al dueño. Aportamos trazabilidad absoluta y datos precisos para que puedas tomar decisiones basadas en criterios reales.</p>
+</div>
+<div class="about-me-image">
+<img alt="Salvatore Berticci — SalvaNovaSolutions" loading="lazy" src="assets/images/foto-mia.webp"/>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== PROYECTOS DESTACADOS ==================== -->
+<section class="section section--alt fade-in" id="proyectos-destacados">
+<div class="container">
+<div class="section-header">
+<span class="badge badge-gold" style="margin-bottom: 16px; display: inline-flex;">
+<i class="fas fa-star"></i> Portafolio
                 </span>
-                <h2>Proyectos Destacados</h2>
-                <p>Casos donde nuestro equipo transformó la operación de empresas reales con soluciones de software a medida.</p>
-            </div>
-
-            <div class="portfolio-grid">
-                <!-- Galanet Escuque -->
-                <div class="portfolio-card" data-category="sistemas-web">
-                    <span class="card-category">Sistemas Web</span>
-                    <h3>Galanet Escuque</h3>
-                    <p>Empresa de servicios con inventario y nómina en Excel que pasó a un sistema de control operativo a medida con trazabilidad total.</p>
-                    <div class="card-metric"><i class="fas fa-arrow-trend-up" style="margin-right:6px;"></i>95% Reducción Operativa</div>
-                </div>
-
-                <!-- Minimarket Montolis -->
-                <div class="portfolio-card" data-category="sistemas-web">
-                    <span class="card-category">Sistemas Web</span>
-                    <h3>Minimarket Montolis</h3>
-                    <p>Sistema de control operativo y e-commerce a medida para gestión de inventario y ventas desde cualquier dispositivo.</p>
-                    <div class="card-metric"><i class="fas fa-lock" style="margin-right:6px;"></i>Control Total y Ubicuidad</div>
-                </div>
-
-                <!-- Bot WhatsApp -->
-                <div class="portfolio-card" data-category="bots-ia">
-                    <span class="card-category">Bots / IA</span>
-                    <h3>Bot WhatsApp con IA</h3>
-                    <p>Bot con inteligencia artificial que atiende consultas 24/7, califica leads y registra conversaciones para seguimiento automatizado.</p>
-                    <div class="card-metric"><i class="fas fa-robot" style="margin-right:6px;"></i>Atención 24/7 con IA</div>
-                </div>
-
-                <!-- SalvaTechnology -->
-                <div class="portfolio-card" data-category="paginas-web">
-                    <span class="card-category">Páginas Web</span>
-                    <h3>SalvaTechnology</h3>
-                    <p>Sitio web con portafolio de proyectos, casos de estudio y formularios inteligentes que convierten visitantes en leads calificados.</p>
-                    <div class="card-metric"><i class="fas fa-users" style="margin-right:6px;"></i>Vitrina Digital que Genera Leads</div>
-                </div>
-
-                <!-- App Musu -->
-                <div class="portfolio-card" data-category="apps-moviles">
-                    <span class="card-category">Apps Móviles</span>
-                    <h3>App Musu</h3>
-                    <p>Sistema POS que funciona sin Internet con control de inventario en tiempo real y gestión de créditos a clientes.</p>
-                    <div class="card-metric"><i class="fas fa-mobile-screen" style="margin-right:6px;"></i>POS Offline con Control Total</div>
-                </div>
-
-                <!-- TratoSeguro -->
-                <div class="portfolio-card" data-category="sistemas-web">
-                    <span class="card-category">Sistemas Web</span>
-                    <h3>TratoSeguro</h3>
-                    <p>Marketplace donde los vendedores publican catálogos y los compradores realizan pedidos mayoristas con carrito y seguimiento.</p>
-                    <div class="card-metric"><i class="fas fa-chart-bar" style="margin-right:6px;"></i>Ventas Mayoristas +35%</div>
-                </div>
-            </div>
-
-            <div style="text-align:center; margin-top: 48px;">
-                <a href="/portafolio.html" class="cta-button">
-                    <i class="fas fa-folder-open"></i> Ver todos los proyectos
+<h2>Proyectos Destacados</h2>
+<p>Casos donde nuestro equipo transformó la operación de empresas reales con soluciones de software a medida.</p>
+</div>
+<div class="portfolio-grid">
+<!-- Galanet Escuque -->
+<div class="portfolio-card" data-category="sistemas-web">
+<span class="card-category">Sistemas Web</span>
+<h3>Galanet Escuque</h3>
+<p>Empresa de servicios con inventario y nómina en Excel que pasó a un sistema de control operativo a medida con trazabilidad total.</p>
+<div class="card-metric"><i class="fas fa-arrow-trend-up" style="margin-right:6px;"></i>95% Reducción Operativa</div>
+</div>
+<!-- Minimarket Montolis -->
+<div class="portfolio-card" data-category="sistemas-web">
+<span class="card-category">Sistemas Web</span>
+<h3>Minimarket Montolis</h3>
+<p>Sistema de control operativo y e-commerce a medida para gestión de inventario y ventas desde cualquier dispositivo.</p>
+<div class="card-metric"><i class="fas fa-lock" style="margin-right:6px;"></i>Control Total y Ubicuidad</div>
+</div>
+<!-- Bot WhatsApp -->
+<div class="portfolio-card" data-category="bots-ia">
+<span class="card-category">Bots / IA</span>
+<h3>Bot WhatsApp con IA</h3>
+<p>Bot con inteligencia artificial que atiende consultas 24/7, califica leads y registra conversaciones para seguimiento automatizado.</p>
+<div class="card-metric"><i class="fas fa-robot" style="margin-right:6px;"></i>Atención 24/7 con IA</div>
+</div>
+<!-- SalvaTechnology -->
+<div class="portfolio-card" data-category="paginas-web">
+<span class="card-category">Páginas Web</span>
+<h3>SalvaTechnology</h3>
+<p>Sitio web con portafolio de proyectos, casos de estudio y formularios inteligentes que convierten visitantes en leads calificados.</p>
+<a class="btn btn-secondary btn-ver-proyecto" href="/proyectos/salvatechnology/" style="margin-bottom: 16px; width: 100%; text-align: center; justify-content: center; font-size: 0.85rem; padding: 10px 16px; border-radius: 8px;"><i class="fas fa-external-link-alt" style="margin-right: 6px;"></i> Ver Proyecto</a><div class="card-metric"><i class="fas fa-users" style="margin-right:6px;"></i>Vitrina Digital que Genera Leads</div>
+</div>
+<!-- App Musu -->
+<div class="portfolio-card" data-category="apps-moviles">
+<span class="card-category">Apps Móviles</span>
+<h3>App Musu</h3>
+<p>Sistema POS que funciona sin Internet con control de inventario en tiempo real y gestión de créditos a clientes.</p>
+<div class="card-metric"><i class="fas fa-mobile-screen" style="margin-right:6px;"></i>POS Offline con Control Total</div>
+</div>
+<!-- TratoSeguro -->
+<div class="portfolio-card" data-category="sistemas-web">
+<span class="card-category">Sistemas Web</span>
+<h3>TratoSeguro</h3>
+<p>Marketplace donde los vendedores publican catálogos y los compradores realizan pedidos mayoristas con carrito y seguimiento.</p>
+<div class="card-metric"><i class="fas fa-chart-bar" style="margin-right:6px;"></i>Ventas Mayoristas +35%</div>
+</div>
+</div>
+<div style="text-align:center; margin-top: 48px;">
+<a class="cta-button" href="/portafolio.html">
+<i class="fas fa-folder-open"></i> Ver todos los proyectos
                 </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== BENEFICIOS ==================== -->
-    <section id="beneficios" class="section fade-in">
-        <div class="container">
-            <div class="section-header">
-                <span class="badge badge-blue" style="margin-bottom: 16px; display: inline-flex;">
-                    <i class="fas fa-gem"></i> Por qué elegirnos
+</div>
+</div>
+</section>
+<!-- ==================== BENEFICIOS ==================== -->
+<section class="section fade-in" id="beneficios">
+<div class="container">
+<div class="section-header">
+<span class="badge badge-blue" style="margin-bottom: 16px; display: inline-flex;">
+<i class="fas fa-gem"></i> Por qué elegirnos
                 </span>
-                <h2>¿Por qué confiar tu control operativo<br>a SalvaNovaSolutions?</h2>
-                <p>No somos una fábrica de software genérico. Somos arquitectos de sistemas que resuelven problemas reales.</p>
-            </div>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <i class="fas fa-check-circle service-icon"></i>
-                    <h3>Criterio y Experiencia</h3>
-                    <p>No implementamos software genérico. Diseñamos sistemas alineados a la realidad operativa de cada empresa.</p>
-                </div>
-                <div class="benefit-card">
-                    <i class="fas fa-eye service-icon"></i>
-                    <h3>Visibilidad Total</h3>
-                    <p>Obtén el control que necesitas sobre cada recurso, tarea y dato de tu empresa. Sin puntos ciegos ni información oculta.</p>
-                </div>
-                <div class="benefit-card">
-                    <i class="fas fa-cogs service-icon"></i>
-                    <h3>Sistemas a Medida</h3>
-                    <p>Desarrollamos exactamente lo que tu operación demanda, resolviendo los problemas donde los sistemas genéricos fallan.</p>
-                </div>
-                <div class="benefit-card">
-                    <i class="fas fa-chart-pie service-icon"></i>
-                    <h3>Datos de Calidad</h3>
-                    <p>Elimina la desinformación. Aseguramos que los datos que alimentan tu toma de decisiones sean reales, precisos y oportunos.</p>
-                </div>
-                <div class="benefit-card">
-                    <i class="fas fa-shield-halved service-icon"></i>
-                    <h3>Reducción de Riesgos</h3>
-                    <p>Minimiza la vulnerabilidad de tu negocio ante errores operativos, fugas de información y falta de supervisión.</p>
-                </div>
-                <div class="benefit-card">
-                    <i class="fas fa-chart-line service-icon"></i>
-                    <h3>Escalabilidad Real</h3>
-                    <p>Prepara tu estructura interna para crecer de manera ordenada, sin que el aumento de clientes signifique más caos.</p>
-                </div>
-            </div>
-            <div style="text-align:center;">
-                <a href="#cta-final" class="cta-button">
-                    <i class="fas fa-stethoscope"></i> Iniciar Diagnóstico Operativo
+<h2>¿Por qué confiar tu control operativo<br/>a SalvaNovaSolutions?</h2>
+<p>No somos una fábrica de software genérico. Somos arquitectos de sistemas que resuelven problemas reales.</p>
+</div>
+<div class="benefits-grid">
+<div class="benefit-card">
+<i class="fas fa-check-circle service-icon"></i>
+<h3>Criterio y Experiencia</h3>
+<p>No implementamos software genérico. Diseñamos sistemas alineados a la realidad operativa de cada empresa.</p>
+</div>
+<div class="benefit-card">
+<i class="fas fa-eye service-icon"></i>
+<h3>Visibilidad Total</h3>
+<p>Obtén el control que necesitas sobre cada recurso, tarea y dato de tu empresa. Sin puntos ciegos ni información oculta.</p>
+</div>
+<div class="benefit-card">
+<i class="fas fa-cogs service-icon"></i>
+<h3>Sistemas a Medida</h3>
+<p>Desarrollamos exactamente lo que tu operación demanda, resolviendo los problemas donde los sistemas genéricos fallan.</p>
+</div>
+<div class="benefit-card">
+<i class="fas fa-chart-pie service-icon"></i>
+<h3>Datos de Calidad</h3>
+<p>Elimina la desinformación. Aseguramos que los datos que alimentan tu toma de decisiones sean reales, precisos y oportunos.</p>
+</div>
+<div class="benefit-card">
+<i class="fas fa-shield-halved service-icon"></i>
+<h3>Reducción de Riesgos</h3>
+<p>Minimiza la vulnerabilidad de tu negocio ante errores operativos, fugas de información y falta de supervisión.</p>
+</div>
+<div class="benefit-card">
+<i class="fas fa-chart-line service-icon"></i>
+<h3>Escalabilidad Real</h3>
+<p>Prepara tu estructura interna para crecer de manera ordenada, sin que el aumento de clientes signifique más caos.</p>
+</div>
+</div>
+<div style="text-align:center;">
+<a class="cta-button" href="#cta-final">
+<i class="fas fa-stethoscope"></i> Iniciar Diagnóstico Operativo
                 </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== FAQ ==================== -->
-    <section id="faq" class="section section--alt fade-in">
-        <div class="container">
-            <div class="section-header">
-                <span class="badge badge-cyan" style="margin-bottom: 16px; display: inline-flex;">
-                    <i class="fas fa-circle-question"></i> FAQ
+</div>
+</div>
+</section>
+<!-- ==================== FAQ ==================== -->
+<section class="section section--alt fade-in" id="faq">
+<div class="container">
+<div class="section-header">
+<span class="badge badge-cyan" style="margin-bottom: 16px; display: inline-flex;">
+<i class="fas fa-circle-question"></i> FAQ
                 </span>
-                <h2>Preguntas Frecuentes</h2>
-                <p>Respondemos las dudas más comunes antes de que agendes tu sesión.</p>
-            </div>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>¿Funciona si la gestión actual es mayormente manual?</h3>
-                        <i class="fas fa-chevron-down faq-chevron"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>Sí. Especializamos nuestro trabajo en estructurar operaciones que hoy dependen de Excel o métodos manuales, creando un sistema centralizado que aporte orden y visibilidad real sobre la gestión diaria.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>¿En qué consiste la sesión de diagnóstico operativa?</h3>
-                        <i class="fas fa-chevron-down faq-chevron"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>Es una evaluación técnica donde analizamos los flujos de información actuales para detectar dónde se pierde el control, tiempo y dinero por falta de visibilidad de los datos críticos.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>¿Esta solución reemplaza el ERP actual?</h3>
-                        <i class="fas fa-chevron-down faq-chevron"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>No necesariamente. Diseñamos sistemas que cubren las necesidades específicas y críticas de tu operación —como inventarios o nóminas— que el software estándar suele ignorar, garantizando trazabilidad total.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>¿Cómo garantizan que el sistema será adoptado por el equipo?</h3>
-                        <i class="fas fa-chevron-down faq-chevron"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>Al adaptar el sistema a la realidad del negocio, la herramienta se convierte en el soporte clave para el trabajo diario, facilitando el control y asegurando la precisión de los datos reales.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>¿Qué tipo de empresas pueden beneficiarse de este control?</h3>
-                        <i class="fas fa-chevron-down faq-chevron"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>Cualquier empresa de servicios que maneje inventarios, nóminas o reportes complejos y necesite una visión clara de su realidad operativa para crecer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>¿Cuál es el tiempo estimado de implementación?</h3>
-                        <i class="fas fa-chevron-down faq-chevron"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>Dependiendo de la complejidad de los requerimientos, el sistema suele estar operativo en un rango de 4 a 8 semanas, aportando control y orden desde las primeras etapas.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>¿Cómo se mide el éxito del sistema implementado?</h3>
-                        <i class="fas fa-chevron-down faq-chevron"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <div class="faq-answer-inner">
-                            <p>Se mide a través de la fidelidad de los datos, la eliminación de la incertidumbre operativa y la capacidad de la dirección para tomar decisiones basadas en información real y trazabilidad total.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== CTA FINAL ==================== -->
-    <section id="cta-final" class="section">
-        <div class="container">
-            <div class="cta-box">
-                <span class="badge badge-gold" style="margin-bottom: 20px; display: inline-flex; justify-content: center;">
-                    <i class="fas fa-calendar-check"></i> Diagnóstico gratuito · Sin compromiso
+<h2>Preguntas Frecuentes</h2>
+<p>Respondemos las dudas más comunes antes de que agendes tu sesión.</p>
+</div>
+<div class="faq-list">
+<div class="faq-item">
+<div class="faq-question">
+<h3>¿Funciona si la gestión actual es mayormente manual?</h3>
+<i class="fas fa-chevron-down faq-chevron"></i>
+</div>
+<div class="faq-answer">
+<div class="faq-answer-inner">
+<p>Sí. Especializamos nuestro trabajo en estructurar operaciones que hoy dependen de Excel o métodos manuales, creando un sistema centralizado que aporte orden y visibilidad real sobre la gestión diaria.</p>
+</div>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">
+<h3>¿En qué consiste la sesión de diagnóstico operativa?</h3>
+<i class="fas fa-chevron-down faq-chevron"></i>
+</div>
+<div class="faq-answer">
+<div class="faq-answer-inner">
+<p>Es una evaluación técnica donde analizamos los flujos de información actuales para detectar dónde se pierde el control, tiempo y dinero por falta de visibilidad de los datos críticos.</p>
+</div>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">
+<h3>¿Esta solución reemplaza el ERP actual?</h3>
+<i class="fas fa-chevron-down faq-chevron"></i>
+</div>
+<div class="faq-answer">
+<div class="faq-answer-inner">
+<p>No necesariamente. Diseñamos sistemas que cubren las necesidades específicas y críticas de tu operación —como inventarios o nóminas— que el software estándar suele ignorar, garantizando trazabilidad total.</p>
+</div>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">
+<h3>¿Cómo garantizan que el sistema será adoptado por el equipo?</h3>
+<i class="fas fa-chevron-down faq-chevron"></i>
+</div>
+<div class="faq-answer">
+<div class="faq-answer-inner">
+<p>Al adaptar el sistema a la realidad del negocio, la herramienta se convierte en el soporte clave para el trabajo diario, facilitando el control y asegurando la precisión de los datos reales.</p>
+</div>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">
+<h3>¿Qué tipo de empresas pueden beneficiarse de este control?</h3>
+<i class="fas fa-chevron-down faq-chevron"></i>
+</div>
+<div class="faq-answer">
+<div class="faq-answer-inner">
+<p>Cualquier empresa de servicios que maneje inventarios, nóminas o reportes complejos y necesite una visión clara de su realidad operativa para crecer.</p>
+</div>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">
+<h3>¿Cuál es el tiempo estimado de implementación?</h3>
+<i class="fas fa-chevron-down faq-chevron"></i>
+</div>
+<div class="faq-answer">
+<div class="faq-answer-inner">
+<p>Dependiendo de la complejidad de los requerimientos, el sistema suele estar operativo en un rango de 4 a 8 semanas, aportando control y orden desde las primeras etapas.</p>
+</div>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">
+<h3>¿Cómo se mide el éxito del sistema implementado?</h3>
+<i class="fas fa-chevron-down faq-chevron"></i>
+</div>
+<div class="faq-answer">
+<div class="faq-answer-inner">
+<p>Se mide a través de la fidelidad de los datos, la eliminación de la incertidumbre operativa y la capacidad de la dirección para tomar decisiones basadas en información real y trazabilidad total.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== CTA FINAL ==================== -->
+<section class="section" id="cta-final">
+<div class="container">
+<div class="cta-box">
+<span class="badge badge-gold" style="margin-bottom: 20px; display: inline-flex; justify-content: center;">
+<i class="fas fa-calendar-check"></i> Diagnóstico gratuito · Sin compromiso
                 </span>
-                <h2>El orden de tu negocio comienza con un diagnóstico claro</h2>
-                <p>Nuestro equipo identificará las fugas operativas que están limitando tu crecimiento en una sesión de 30 minutos completamente gratuita.</p>
-                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 8px;">
-                    <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-check" style="color: var(--success); margin-right: 6px;"></i>Sin costo</span>
-                    <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-check" style="color: var(--success); margin-right: 6px;"></i>Sin compromiso</span>
-                    <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-check" style="color: var(--success); margin-right: 6px;"></i>Informe entregado al finalizar</span>
-                </div>
-                <div class="calendar-wrapper">
-                    <iframe src="https://calendar.app.google/tFe6qFzGhYyZFWxu7" style="border: 0" width="100%" height="700" frameborder="0" scrolling="yes"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== FOOTER ==================== -->
-    <footer id="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-top">
-                    <div class="footer-logo">
-                        <img src="assets/images/logos/logo.png" alt="SalvaNovaSolutions Logo">
-                    </div>
-                    <nav class="footer-nav">
-                        <a href="/">Inicio</a>
-                        <a href="/portafolio.html">Portafolio</a>
-                        <a href="/servicios.html">Servicios</a>
-                        <a href="#cta-final">Agendar Sesión</a>
-                    </nav>
-                </div>
-                <div class="footer-divider"></div>
-                <div class="footer-bottom">
-                    <p class="footer-copy">© 2026 SalvaNovaSolutions. Desarrollado por <strong style="color: var(--text-muted);">Salvatore Israel Berticci Roman</strong>. RIF: V302365365. Todos los derechos reservados.</p>
-                    <div class="footer-legal">
-                        <a href="/politica-privacidad.html">Política de Privacidad</a>
-                        <a href="/eliminacion-datos.html">Eliminación de Datos</a>
-                        <a href="/condiciones-servicio.html">Condiciones del Servicio</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="assets/js/main.js"></script>
+<h2>El orden de tu negocio comienza con un diagnóstico claro</h2>
+<p>Nuestro equipo identificará las fugas operativas que están limitando tu crecimiento en una sesión de 30 minutos completamente gratuita.</p>
+<div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 8px;">
+<span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-check" style="color: var(--success); margin-right: 6px;"></i>Sin costo</span>
+<span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-check" style="color: var(--success); margin-right: 6px;"></i>Sin compromiso</span>
+<span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-check" style="color: var(--success); margin-right: 6px;"></i>Informe entregado al finalizar</span>
+</div>
+<div class="calendar-wrapper">
+<iframe frameborder="0" height="700" scrolling="yes" src="https://calendar.app.google/tFe6qFzGhYyZFWxu7" style="border: 0" width="100%"></iframe>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== FOOTER ==================== -->
+<footer id="footer">
+<div class="container">
+<div class="footer-content">
+<div class="footer-top">
+<div class="footer-logo">
+<img alt="SalvaNovaSolutions Logo" src="assets/images/logos/logo.png"/>
+</div>
+<nav class="footer-nav">
+<a href="/">Inicio</a>
+<a href="/portafolio.html">Portafolio</a>
+<a href="/servicios.html">Servicios</a>
+<a href="#cta-final">Agendar Sesión</a>
+</nav>
+</div>
+<div class="footer-divider"></div>
+<div class="footer-bottom">
+<p class="footer-copy">© 2026 SalvaNovaSolutions. Desarrollado por <strong style="color: var(--text-muted);">Salvatore Israel Berticci Roman</strong>. RIF: V302365365. Todos los derechos reservados.</p>
+<div class="footer-legal">
+<a href="/politica-privacidad.html">Política de Privacidad</a>
+<a href="/eliminacion-datos.html">Eliminación de Datos</a>
+<a href="/condiciones-servicio.html">Condiciones del Servicio</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script src="assets/js/main.js"></script>
 </body>
-
 </html>
