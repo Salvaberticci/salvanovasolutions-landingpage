@@ -276,6 +276,7 @@ body.has-navbar {
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .portfolio-card:hover {
@@ -342,6 +343,40 @@ body.has-navbar {
     color: var(--accent-color);
     padding-top: 12px;
     border-top: 1px solid rgba(0, 198, 255, 0.15);
+}
+
+.portfolio-card .card-media {
+    width: 100%;
+    margin: -28px -28px 20px -28px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+.portfolio-card .card-media lite-youtube {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+}
+
+.portfolio-card .card-image-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: rgba(0, 198, 255, 0.08);
+    border-bottom: 1px solid rgba(0, 198, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-card .card-image-placeholder i {
+    font-size: 2.5em;
+    color: rgba(0, 198, 255, 0.3);
+}
+
+.portfolio-card .card-company {
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 8px;
 }
 
 @media (max-width: 1024px) {
