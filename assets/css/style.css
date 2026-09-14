@@ -346,16 +346,19 @@ body.has-navbar {
 }
 
 .portfolio-card .card-media {
-    width: 100%;
+    width: calc(100% + 56px);
     margin: -28px -28px 20px -28px;
-    border-radius: 20px 20px 0 0;
+    position: relative;
     overflow: hidden;
+    padding-bottom: 56.25%;
 }
 
 .portfolio-card .card-media lite-youtube {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    aspect-ratio: 16 / 9;
-    display: block;
+    height: 100%;
 }
 
 .portfolio-card .card-image-placeholder {
