@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Educativa Mari</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .hero-section img {
+            max-width: 180px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        .hero-section h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #ffd600, #0d8bf2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-section p {
+            font-size: 1.2rem;
+            color: #b0b0b0;
+            max-width: 500px;
+            margin-bottom: 30px;
+        }
+        .btn-explore {
+            background: linear-gradient(90deg, #ffd600, #f0c000);
+            color: #1a1a2e;
+            font-weight: 700;
+            padding: 14px 40px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+        }
+        .btn-explore:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 214, 0, 0.4);
+            color: #1a1a2e;
+            text-decoration: none;
+        }
+        .courses-preview {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .courses-preview h2 {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+            color: #ffd600;
+        }
+        .course-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .course-card:hover {
+            transform: translateY(-3px);
+            background: rgba(255,255,255,0.08);
+        }
+        .course-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            flex-shrink: 0;
+        }
+        .course-card h3 { font-size: 1.1rem; margin-bottom: 5px; }
+        .course-card p { font-size: 0.9rem; color: #999; margin: 0; }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .feature {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        .feature i { font-size: 2rem; color: #ffd600; margin-bottom: 15px; }
+        .feature h4 { font-size: 1rem; margin-bottom: 8px; }
+        .feature p { font-size: 0.85rem; color: #888; }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <img src="https://via.placeholder.com/180x180/1a1a2e/ffd600?text=Mari" alt="Logo">
+        <h1>Plataforma Educativa Mari</h1>
+        <p>Transformando la educación con tecnología y robótica. Cursos interactivos, foros, quizzes y seguimiento de progreso.</p>
+        <a href="#" class="btn-explore">Explorar Cursos</a>
+    </div>
+
+    <div class="courses-preview">
+        <h2>Cursos Disponibles</h2>
+        <div class="course-card">
+            <div class="course-icon" style="background: rgba(255,214,0,0.15);">🤖</div>
+            <div>
+                <h3>Introducción a la Robótica</h3>
+                <p>Aprende los fundamentos de la robótica con proyectos prácticos.</p>
+            </div>
+        </div>
+        <div class="course-card">
+            <div class="course-icon" style="background: rgba(13,139,242,0.15);">💻</div>
+            <div>
+                <h3>Programación Python</h3>
+                <p>Domina Python desde cero hasta nivel intermedio.</p>
+            </div>
+        </div>
+        <div class="course-card">
+            <div class="course-icon" style="background: rgba(0,200,83,0.15);">🔬</div>
+            <div>
+                <h3>Ciencia de Datos</h3>
+                <p>Explora el mundo de los datos y su análisis práctico.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <i class="fas fa-book-open"></i>
+            <h4>Cursos Interactivos</h4>
+            <p>Contenido multimedia con evaluaciones en línea.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-comments"></i>
+            <h4>Foros de Discusión</h4>
+            <p>Comunidad activa de estudiantes y profesores.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-chart-line"></i>
+            <h4>Seguimiento</h4>
+            <p>Control de progreso y calificaciones en tiempo real.</p>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 Plataforma Educativa Mari. Todos los derechos reservados.
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+</body>
+</html>
