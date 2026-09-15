@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Delicious - Agroindustrias D Sabores C.A. Fábrica y distribuidora de confitería, repostería y alimentos. Ventas al mayor con despacho nacional desde Trujillo.">
+    <meta name="keywords"
+        content="arequipe, chocolate untable, mermeladas, siropes, gomitas, confitería, repostería, Trujillo, Venezuela, distribución nacional">
+    <title>Delicious - Sabor y Calidad desde Trujillo para toda Venezuela</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/catalogo.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#/" class="logo">
+                    <img src="assets/images/logo.png" alt="Delicious Logo" class="brand-logo">
+                </a>
+
+                <!-- Botón de Menú Móvil -->
+                <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#/" class="nav-link">Inicio</a></li>
+                    <li><a href="#/historia" class="nav-link">Nosotros</a></li>
+                    <li><a href="#/productos" class="nav-link">Productos</a></li>
+                    <li><a href="#/catalogo" class="nav-link">Catálogo</a></li>
+                    <li><a href="#/presencia" class="nav-link">Presencia</a></li>
+                    <li><a href="#/contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL HÍBRIDO -->
+    <div id="home-view">
+        <!-- Hero con video YouTube -->
+        <section class="hero" id="home">
+            <div class="video-background">
+                <iframe id="youtube-video" class="video-iframe"
+                    src="https://www.youtube.com/embed/SrwasnZ78CY?autoplay=1&mute=1&loop=1&playlist=SrwasnZ78CY&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+                <div class="video-overlay">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Sabor que Trasciende, Calidad que Permanece</h1>
+                        <p class="hero-subtitle">Agroindustrias D Sabores C.A. - Con mucho orgullo desde Trujillo 🇻🇪
+                        </p>
+                        <a href="#/productos" class="btn btn-primary">Conoce Nuestros Productos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuestra Historia -->
+        <section class="section historia" id="historia">
+            <div
+                style="position: absolute; top: -100px; right: -100px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(238, 4, 55, 0.05) 0%, transparent 70%); border-radius: 50%; z-index: -1;">
+            </div>
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2 class="section-title">Nuestra Pasión</h2>
+                    <p class="section-subtitle">
+                        En <strong>Delicious</strong>, no solo fabricamos alimentos; creamos momentos dulces que unen a
+                        las familias venezolanas.
+                    </p>
+                </div>
+                <div class="valores-grid">
+                    <div class="valor-card fade-in" data-delay="0.2s">
+                        <div class="valor-icon-container">
+                            <img src="assets/images/fabrica.png" alt="Planta de Producción" class="valor-img">
+                        </div>
+                        <h3 class="valor-title">Fábrica Nacional</h3>
+                        <p class="valor-description">Producimos en Valera, Trujillo, con estándares de calidad que
+                            garantizan productos frescos.</p>
+                    </div>
+                    <div class="valor-card fade-in" data-delay="0.4s">
+                        <div class="valor-icon-container">
+                            <img src="assets/images/distribucion-nacional.png" alt="Distribución" class="valor-img">
+                        </div>
+                        <h3 class="valor-title">Distribución Nacional</h3>
+                        <p class="valor-description">Ventas al mayor con despacho a todo el país. Llegamos donde tu
+                            negocio nos necesite.</p>
+                    </div>
+                    <div class="valor-card fade-in" data-delay="0.6s">
+                        <div class="valor-icon-container">
+                            <img src="assets/images/para-tu-negocio.png" alt="Productos para Negocios"
+                                class="valor-img">
+                        </div>
+                        <h3 class="valor-title">Para Tu Negocio</h3>
+                        <p class="valor-description">Servimos a reposteros, panaderos y negocios que buscan calidad y
+                            variedad en un solo lugar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Líneas de Producto (Desfile Animado) -->
+        <section class="section productos fade-in" id="productos">
+            <div
+                style="position: absolute; bottom: -50px; left: -50px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(238, 4, 55, 0.03) 0%, transparent 70%); border-radius: 50%; z-index: -1;">
+            </div>
+            <div class="container-wide">
+                <div class="section-header">
+                    <h2 class="section-title">Nuestra Variedad</h2>
+                    <p class="section-subtitle">Calidad, sabor y variedad que impulsa tu negocio gourmet.</p>
+                </div>
+
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <!-- Primer grupo de imágenes -->
+                        <div class="carousel-item"><a href="#/catalogo"><img src="assets/images/products/arequipe.png"
+                                    alt="Arequipe"><span>Arequipe</span></a></div>
+                        <div class="carousel-item"><a href="#/catalogo"><img
+                                    src="assets/images/products/bebida-instantánea.png"
+                                    alt="Bebida"><span>Bebidas</span></a></div>
+                        <div class="carousel-item"><a href="#/catalogo"><img
+                                    src="assets/images/products/crema-de-chocolate.png"
+                                    alt="Chocolate"><span>Chocolate</span></a></div>
+                        <div class="carousel-item"><a href="#/catalogo"><img
+                                    src="assets/images/products/gelatina-sin-sabor.png"
+                                    alt="Gelatina"><span>Gelatina</span></a></div>
+                        <div class="carousel-item"><a href="#/catalogo"><img
+                                    src="assets/images/products/gomitas-gomilu.png"
+                                    alt="Gomitas"><span>Gomitas</span></a></div>
+                        <div class="carousel-item"><a href="#/catalogo"><img
+                                    src="assets/images/products/helados-geliglu.png"
+                                    alt="Helados"><span>Helados</span></a></div>
+                        <div class="carousel-item"><a href="#/catalogo"><img src="assets/images/products/mermelada.png"
+                                    alt="Mermelada"><span>Mermelada</span></a></div>
+
+                        <!-- Segundo grupo para scroll infinito (duplicado) -->
+                        <div class="carousel-item"><a href="#/catalogo"><img src="assets/images/products/arequipe.png"
+                                    alt="Arequipe"><span>Arequipe</span></a></div>
+                        <div class="carousel-item"><a href="#/catalogo"><img
+                                    src="assets/images/products/bebida-instantánea.png"
+                                    alt="Bebida"><span>Bebidas</span></a></div>
+                        <div class="carousel-item"><a href="#/catalogo"><img
+                                    src="assets/images/products/crema-de-chocolate.png"
+                                    alt="Chocolate"><span>Chocolate</span></a></div>
+                        <div class="carousel-item"><a href="#/catalogo"><img
+                                    src="assets/images/products/gelatina-sin-sabor.png"
+                                    alt="Gelatina"><span>Gelatina</span></a></div>
+                        <div class="carousel-item"><a href="#/catalogo"><img
+                                    src="assets/images/products/gomitas-gomilu.png"
+                                    alt="Gomitas"><span>Gomitas</span></a></div>
+                        <div class="carousel-item"><a href="#/catalogo"><img
+                                    src="assets/images/products/helados-geligu.png"
+                                    alt="Helados"><span>Helados</span></a></div>
+                        <div class="carousel-item"><a href="#/catalogo"><img src="assets/images/products/mermelada.png"
+                                    alt="Mermelada"><span>Mermelada</span></a></div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="#/catalogo" class="btn btn-primary">Ver Catálogo con Detalles</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Presencia Nacional -->
+        <section class="section presencia fade-in" id="presencia">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Estamos en Todo el País</h2>
+                    <p class="section-subtitle">Desde Valera, Trujillo, llevamos nuestros productos a toda Venezuela.
+                    </p>
+                </div>
+                <div class="mapa-container">
+                    <div class="cobertura-stats">
+                        <div class="stat-item fade-in">
+                            <div class="stat-number" data-target="23">0</div>
+                            <div class="stat-label">Estados</div>
+                        </div>
+                        <div class="stat-item fade-in">
+                            <div class="stat-number" data-target="500" data-suffix="+">0</div>
+                            <div class="stat-label">Clientes Satisfechos en todo el país</div>
+                        </div>
+                        <div class="stat-item fade-in">
+                            <div class="stat-number" data-target="100" data-suffix="%">0</div>
+                            <div class="stat-label">Cobertura Nacional</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="section contacto fade-in" id="contacto">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Hablemos de tu Negocio</h2>
+                    <p class="section-subtitle">Estamos listos para ser tu aliado estratégico.</p>
+                </div>
+                <div class="contacto-container">
+                    <form id="contactForm" class="contact-form fade-in">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="nombre" class="form-label">Nombre Completo *</label>
+                                <input type="text" id="nombre" class="form-input" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono" class="form-label">WhatsApp / Teléfono *</label>
+                                <input type="tel" id="telefono" class="form-input" placeholder="Ej: 0414..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Correo Electrónico *</label>
+                                <input type="email" id="email" class="form-input" placeholder="nombre@ejemplo.com"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="empresa" class="form-label">Empresa / Negocio *</label>
+                                <input type="text" id="empresa" class="form-input" placeholder="Nombre de tu negocio"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cargo" class="form-label">Cargo / Oficio *</label>
+                                <input type="text" id="cargo" class="form-input" placeholder="Ej: Pastelero, Dueño..."
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje" class="form-label">¿Cómo podemos ayudarte? *</label>
+                            <textarea id="mensaje" class="form-textarea" placeholder="Escribe tu mensaje aquí..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- BOTÓN FLOTANTE DEL CARRITO -->
+    <div id="cart-fab" class="cart-fab" onclick="window.toggleCart()">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count" class="cart-count">0</span>
+    </div>
+
+    <!-- DRAWER DEL CARRITO -->
+    <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-header">
+            <h3>Tu Pedido 🛒</h3>
+            <button class="close-cart" onclick="window.toggleCart()">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <!-- Items del carrito se cargarán aquí -->
+            <div class="empty-cart-msg">
+                <p>Tu carrito está vacío</p>
+                <a href="#/catalogo" class="btn btn-primary" onclick="window.toggleCart()">Ir al Catálogo</a>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total Items:</span>
+                <span id="cart-total-count">0</span>
+            </div>
+            <button class="btn btn-success btn-block" onclick="window.sendWhatsAppOrder()">
+                <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- MODAL DE PRODUCTO (INSTAGRAM STYLE) -->
+    <div id="productModal" class="product-modal">
+        <div class="modal-backdrop" onclick="window.closeProductModal()"></div>
+        <div class="modal-container">
+            <button class="modal-close" onclick="window.closeProductModal()">&times;</button>
+            <div class="modal-body">
+                <!-- Columna Izquierda: Video (Instagram Reel) -->
+                <div class="modal-video-column">
+                    <!-- Video Externo (TikTok/Instagram) -->
+                    <iframe id="modalVideoIframe" src="" frameborder="0" scrolling="no" allowtransparency="true"
+                        allow="autoplay" style="display: none;"></iframe>
+                    <!-- Video Local (MP4) -->
+                    <video id="modalLocalVideo" autoplay loop playsinline style="display: none;"></video>
+
+                    <!-- Controles de Video -->
+                    <div id="videoControls" class="video-controls" style="display: none;">
+                        <button id="togglePlay" class="control-btn" title="Reproducir/Pausar">⏸️</button>
+                        <button id="toggleMute" class="control-btn" title="Silenciar/Activar Sonido">🔊</button>
+                    </div>
+                </div>
+                <!-- Columna Derecha: Información -->
+                <div class="modal-info-column">
+                    <div class="modal-header">
+                        <div class="brand-info">
+                            <img src="assets/images/logo.png" alt="Delicious" class="brand-logo-small">
+                            <div class="brand-text">
+                                <span class="brand-name">Agroindustrias Delicious</span>
+                                <span class="brand-location">Valera, Trujillo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-details">
+                        <h2 id="modalProductName" class="modal-title"></h2>
+                        <p id="modalProductDescription" class="modal-description"></p>
+                        <div id="modalProductPresentations" class="modal-presentations"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#/contacto" class="btn btn-primary btn-block"
+                            onclick="window.closeProductModal()">Solicitar Información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENEDOR DINÁMICO PARA EL CATÁLOGO -->
+    <main id="app-content" style="display: none;">
+        <!-- El catálogo se cargará aquí dinámicamente -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Delicious</h4>
+                    <p>Agroindustrias D Sabores C.A.</p>
+                    <p>Fábrica de confitería, repostería y alimentos</p>
+                    <p>Valera, Estado Trujillo - Venezuela 🇻🇪</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Navegación</h4>
+                    <p><a href="#/">Inicio</a></p>
+                    <p><a href="#/historia">Nosotros</a></p>
+                    <p><a href="#/catalogo">Catálogo</a></p>
+                    <p><a href="#/contacto">Contacto</a></p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>📍 Calle lateral al Mercado Municipal</p>
+                    <p>Local N°1 - Sector Morón</p>
+                    <p>📧 ventas.deliciousdesabores@gmail.com</p>
+                    <p>📱 WhatsApp: 0271-2352989</p>
+                    <p>📷 Instagram: @delicious.oficial</p>
+                </div>
+
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Delicious - Agroindustrias D Sabores C.A. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/router.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

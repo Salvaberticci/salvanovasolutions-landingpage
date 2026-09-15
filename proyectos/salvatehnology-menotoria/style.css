@@ -1,0 +1,114 @@
+/* Custom Styling for SalvaTech Mentoria - Presentation Mode */
+
+:root {
+    --primary-orange: #FF6600;
+    --deep-black: #0D0D0D;
+    --high-black: #050505;
+}
+
+body {
+    background-color: var(--high-black);
+    overflow: hidden;
+}
+
+.font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Background Canvas Fix */
+#binary-canvas {
+    pointer-events: none;
+}
+
+/* Slide System */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.6s;
+    transform: translateX(0);
+}
+
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+/* Custom Scrollbar (for overflow content) */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--high-black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-orange);
+}
+
+/* Selection */
+::selection {
+    background-color: var(--primary-orange);
+    color: white;
+}
+
+/* Smooth Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Navigation Controls Hover */
+button:hover:not(:disabled) {
+    transform: scale(1.1);
+}
+
+button:active:not(:disabled) {
+    transform: scale(0.95);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    h1 {
+        line-height: 1.1;
+    }
+
+    .slide {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 2.5rem !important;
+    }
+}
+
+/* Presentation-specific animations */
+.slide.active>div {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
