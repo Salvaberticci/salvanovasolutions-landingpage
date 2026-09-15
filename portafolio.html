@@ -630,5 +630,291 @@
 </div>
 </footer>
 <script src="assets/js/main.js"></script>
+
+<!-- ===== PROJECT MODAL ===== -->
+<div id="project-modal" class="pmodal-overlay" role="dialog" aria-modal="true" aria-labelledby="pmodal-title">
+  <div class="pmodal-container">
+    <button class="pmodal-close" id="pmodal-close" aria-label="Cerrar">&times;</button>
+    <div class="pmodal-media" id="pmodal-media"></div>
+    <div class="pmodal-body">
+      <span class="pmodal-category" id="pmodal-category"></span>
+      <h2 class="pmodal-title" id="pmodal-title"></h2>
+      <p class="pmodal-client" id="pmodal-client"></p>
+      <p class="pmodal-desc" id="pmodal-desc"></p>
+      <div class="pmodal-details" id="pmodal-details"></div>
+      <div class="pmodal-metric" id="pmodal-metric"></div>
+      <div class="pmodal-actions" id="pmodal-actions"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* ── Modal Overlay ── */
+.pmodal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: pmodal-fadein .25s ease;
+}
+.pmodal-overlay.open { display: flex; }
+
+@keyframes pmodal-fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── Modal Container ── */
+.pmodal-container {
+  position: relative;
+  background: var(--surface, #1a1a2e);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 860px;
+  max-height: 92vh;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  animation: pmodal-slidein .3s cubic-bezier(.22,1,.36,1);
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary, #6c63ff) transparent;
+}
+
+@media (min-width: 700px) {
+  .pmodal-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@keyframes pmodal-slidein {
+  from { opacity: 0; transform: translateY(30px) scale(.97); }
+  to   { opacity: 1; transform: translateY(0)   scale(1);    }
+}
+
+/* ── Close Button ── */
+.pmodal-close {
+  position: absolute;
+  top: 14px; right: 14px;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.15);
+  background: rgba(255,255,255,.07);
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background .2s, transform .2s;
+  z-index: 2;
+}
+.pmodal-close:hover { background: rgba(255,255,255,.18); transform: rotate(90deg); }
+
+/* ── Media Panel ── */
+.pmodal-media {
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+  min-height: 240px;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 700px) {
+  .pmodal-media {
+    border-radius: 20px 0 0 20px;
+    min-height: 400px;
+  }
+}
+.pmodal-media img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.pmodal-media lite-youtube {
+  width: 100%; aspect-ratio: 16/9;
+}
+
+/* ── Body Panel ── */
+.pmodal-body {
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pmodal-category {
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--primary, #6c63ff);
+  background: rgba(108,99,255,.12);
+  padding: 3px 10px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.pmodal-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text, #fff);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.pmodal-client {
+  font-size: .82rem;
+  color: var(--text-muted, #aaa);
+  margin: 0;
+}
+
+.pmodal-desc {
+  font-size: .9rem;
+  color: var(--text-muted, #aaa);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.pmodal-details {
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 12px;
+  padding: 14px;
+  font-size: .82rem;
+  color: var(--text-muted, #aaa);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.pmodal-details p { margin: 0; }
+
+.pmodal-metric {
+  display: inline-block;
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--primary, #6c63ff);
+  background: rgba(108,99,255,.1);
+  border: 1px solid rgba(108,99,255,.25);
+  border-radius: 8px;
+  padding: 6px 14px;
+  width: fit-content;
+}
+
+.pmodal-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+.pmodal-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: .85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity .2s, transform .2s;
+}
+.pmodal-actions a:hover { opacity: .85; transform: translateY(-2px); }
+.pmodal-btn-primary {
+  background: var(--gradient-primary, linear-gradient(135deg,#6c63ff,#4facfe));
+  color: #fff;
+}
+</style>
+
+<script>
+(function () {
+  const overlay  = document.getElementById('project-modal');
+  const closeBtn = document.getElementById('pmodal-close');
+
+  function openModal(card) {
+    // Gather data from the card
+    const title    = card.querySelector('h3')?.innerText.trim() || '';
+    const category = card.querySelector('.card-category')?.innerText.trim() || '';
+    const client   = card.querySelector('.card-company')?.innerHTML || '';
+    const desc     = card.querySelector('.card-desc')?.innerHTML || '';
+    const details  = card.querySelector('.card-extra-details')?.innerHTML || '';
+    const metric   = card.querySelector('.card-metric')?.innerText.trim() || '';
+    const btnEl    = card.querySelector('.btn-ver-proyecto');
+    const mediaEl  = card.querySelector('.card-media');
+
+    // Media: clone img or lite-youtube
+    const mediaContainer = document.getElementById('pmodal-media');
+    mediaContainer.innerHTML = '';
+    if (mediaEl) {
+      const img = mediaEl.querySelector('img');
+      const vid = mediaEl.querySelector('lite-youtube');
+      if (img) {
+        const newImg = document.createElement('img');
+        newImg.src = img.src;
+        newImg.alt = img.alt;
+        mediaContainer.appendChild(newImg);
+      } else if (vid) {
+        const newVid = document.createElement('lite-youtube');
+        newVid.setAttribute('videoid', vid.getAttribute('videoid'));
+        mediaContainer.appendChild(newVid);
+        if (window.LiteYTEmbed) newVid.connectedCallback && newVid.connectedCallback();
+      }
+    }
+
+    document.getElementById('pmodal-category').textContent = category;
+    document.getElementById('pmodal-title').textContent    = title;
+    document.getElementById('pmodal-client').innerHTML     = client;
+    document.getElementById('pmodal-desc').innerHTML       = desc;
+    document.getElementById('pmodal-details').innerHTML    = details;
+    document.getElementById('pmodal-metric').textContent   = metric;
+
+    // Button
+    const actionsEl = document.getElementById('pmodal-actions');
+    actionsEl.innerHTML = '';
+    if (btnEl) {
+      const a = document.createElement('a');
+      a.href = btnEl.href;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.className = 'pmodal-btn-primary';
+      a.innerHTML = '<i class="fas fa-external-link-alt"></i> Ver Proyecto';
+      actionsEl.appendChild(a);
+    }
+
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    document.getElementById('pmodal-media').innerHTML = '';
+  }
+
+  // Attach click to every portfolio card
+  document.querySelectorAll('.portfolio-card').forEach(function(card) {
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', function(e) {
+      // Don't intercept clicks on the "Ver Proyecto" button itself
+      if (e.target.closest('.btn-ver-proyecto')) return;
+      openModal(card);
+    });
+  });
+
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) closeModal();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeModal();
+  });
+})();
+</script>
+
 </body>
 </html>
